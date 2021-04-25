@@ -30,6 +30,8 @@ public class Projectile : MonoBehaviour
         else if (other.gameObject.tag == "Player")
         {
             other.GetComponent<Player>().TakeDamage(damage);
+            Debug.Log("-1 HP");
+            DestroyProjectile();
         }
         else
         {
@@ -37,5 +39,8 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    
+    private void DestroyProjectile()
+    {
+        Destroy(gameObject);
+    }
 }
