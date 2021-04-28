@@ -13,7 +13,9 @@ public class Weapon : MonoBehaviour
     public float Spread = 0.001f;
     public int ProjectilesPerShot = 1;
     public int Damage = 1;
+    private bool canPickUp = false;
     private bool canFire = true;
+    private GameObject otherObject;
 
     public void SetVariables(GameObject playerObject)
     {
@@ -22,8 +24,12 @@ public class Weapon : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("mouse 0") && canFire)
+        if (Input.GetKey("mouse 0") && canFire && PlayerObject != null)
             FireProjectile();
+        if (Input.GetKeyDown("e") && PlayerObject == null && canPickUp)
+        {
+            SetPlayerObject();
+        }
     }
 
     private void FireProjectile()
@@ -46,5 +52,36 @@ public class Weapon : MonoBehaviour
     {
         yield return new WaitForSeconds(FireRate);
         canFire = true;
+    }
+
+    private void SetPlayerObject()
+    {
+        if (otherObject.CompareTag("Player"))
+        {
+            PlayerObject = otherObject;
+            this.gameObject.transform.SetParent(PlayerObject.transform);
+            this.gameObject.transform.position.Set(0f, 0f, 0f);
+            PlayerObject.GetComponent<Player>().PickUpNewWeapon(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+        print("YES");
+        canPickUp = true;
+        otherObject = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+        print("NO");
+        canPickUp = false;
+        otherObject = null;
+        }
     }
 }

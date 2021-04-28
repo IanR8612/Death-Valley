@@ -8,14 +8,10 @@ public class Player : MonoBehaviour
     public Camera Camera;
     public GameObject PlayerObject;
     public GameObject WeaponSlotOnePrefab;
-    public GameObject WeaponSlotTwoPrefab;
     private GameObject weaponSlotOne;
-    private GameObject weaponSlotTwo;
     private float moveSpeed = 0.1f;
     private int health = 5;
     private int killCount = 0;
-
-    // to-do: remove the second weapon slot
 
     public void TakeDamage(int damage)
     {
@@ -27,6 +23,12 @@ public class Player : MonoBehaviour
     public void AddToKillCount()
     {
         killCount += 1;
+    }
+
+    public void PickUpNewWeapon(GameObject weapon)
+    {
+        Destroy(weaponSlotOne.gameObject);
+        weaponSlotOne = weapon;
     }
 
     private void Die()
@@ -65,10 +67,6 @@ public class Player : MonoBehaviour
         {
             newPosition.x += moveSpeed;
         }
-        if (Input.GetKeyDown("space"))
-        {
-            SwitchActiveWeapons();
-        }
 
         PlayerObject.transform.position = newPosition;
     }
@@ -83,30 +81,14 @@ public class Player : MonoBehaviour
     private void InitializeWeapons()
     {
         weaponSlotOne = InstantiateWeaponPrefab(WeaponSlotOnePrefab);
-        weaponSlotTwo = InstantiateWeaponPrefab(WeaponSlotTwoPrefab);
-        weaponSlotTwo.SetActive(false);
     }
 
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
     {
         GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, PlayerObject.transform);
-        newWeapon.transform.Rotate(new Vector3(0, 0, -90));
+        newWeapon.transform.Rotate(new Vector3(0, 0, 90));
         Weapon weaponScript = (Weapon)newWeapon.GetComponent(typeof(Weapon));
         weaponScript.SetVariables(PlayerObject);
         return newWeapon;
-    }
-
-    private void SwitchActiveWeapons()
-    {
-        if (weaponSlotOne.activeSelf == true)
-        {
-            weaponSlotOne.SetActive(false);
-            weaponSlotTwo.SetActive(true);
-        }
-        else
-        {
-            weaponSlotOne.SetActive(true);
-            weaponSlotTwo.SetActive(false);
-        }
     }
 }

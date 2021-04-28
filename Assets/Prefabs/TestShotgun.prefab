@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2537630577196333249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.81, z: 0}
+  m_LocalPosition: {x: -0, y: 1.213, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2537630577452307984}
@@ -41,8 +41,8 @@ GameObject:
   - component: {fileID: 2537630577452307984}
   - component: {fileID: 2537630577452308079}
   - component: {fileID: 2537630577452308078}
-  - component: {fileID: 2537630577452308077}
   - component: {fileID: 2537630577452308076}
+  - component: {fileID: 4562416806954746686}
   m_Layer: 0
   m_Name: TestShotgun
   m_TagString: Untagged
@@ -112,20 +112,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &2537630577452308077
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2537630577452308075}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &2537630577452308076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,3 +134,16 @@ MonoBehaviour:
   Spread: 6
   ProjectilesPerShot: 6
   Damage: 1
+--- !u!65 &4562416806954746686
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537630577452308075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
