@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public GameObject ProjectileObject;
     private int damage;
 
     public void SetDamage(int newDamage)
@@ -14,24 +13,24 @@ public class Projectile : MonoBehaviour
 
     public void SetTeam(string team)
     {
-        ProjectileObject.gameObject.tag = team;
+        this.gameObject.tag = team;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (ProjectileObject.gameObject.tag == other.gameObject.tag)
+        if (this.gameObject.tag == other.gameObject.tag)
         {
             return;
         }
         else if (other.gameObject.tag == "Enemy")
         {
             other.GetComponent<Enemy>().TakeDamage(damage);
+            Destroy(this.gameObject);
         }
         else if (other.gameObject.tag == "Player")
         {
             other.GetComponent<Player>().TakeDamage(damage);
-            Debug.Log("-1 HP");
-            DestroyProjectile();
+            Destroy(this.gameObject);
         }
         else
         {
@@ -39,8 +38,5 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private void DestroyProjectile()
-    {
-        Destroy(gameObject);
-    }
+
 }

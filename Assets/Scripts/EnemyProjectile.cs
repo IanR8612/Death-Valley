@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyProjectile : Projectile
+public class EnemyProjectile : MonoBehaviour
 {
     public float Speed;
 
-    public Rigidbody rb;
+    private Rigidbody rb;
 
-    public Player player;
+    private Player player;
     private Vector3 target;
+
+    private int damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,24 @@ public class EnemyProjectile : Projectile
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindObjectOfType<Player>();
 
-
         target = (player.transform.position - transform.position).normalized * Speed;
         rb.velocity = new Vector2(target.x, target.y);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (this.gameObject.tag == other.gameObject.tag)
+        {
+            return;
+        }
+        else if (other.gameObject.tag == "Player")
+        {
+            other.GetComponent<Player>().TakeDamage(damage);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            return;
+        }
     }
 }
