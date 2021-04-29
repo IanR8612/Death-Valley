@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Camera Camera;
-    public GameObject PlayerObject;
     public GameObject WeaponSlotOnePrefab;
     private GameObject weaponSlotOne;
     private float moveSpeed = 0.1f;
@@ -33,7 +32,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Destroy(PlayerObject);
+        Destroy(this.gameObject);
     }
 
     private void Start()
@@ -49,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector3 newPosition = PlayerObject.transform.position;
+        Vector3 newPosition = this.gameObject.transform.position;
         
         if (Input.GetKey("w"))
         {
@@ -68,14 +67,14 @@ public class Player : MonoBehaviour
             newPosition.x += moveSpeed;
         }
 
-        PlayerObject.transform.position = newPosition;
+        this.gameObject.transform.position = newPosition;
     }
 
     private void LookAtMouse()
     {
         Vector3 mousePosition = Camera.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
-        PlayerObject.transform.LookAt(mousePosition);
+        this.gameObject.transform.LookAt(mousePosition);
     }
 
     private void InitializeWeapons()
@@ -85,10 +84,10 @@ public class Player : MonoBehaviour
 
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
     {
-        GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, PlayerObject.transform);
-        newWeapon.transform.Rotate(new Vector3(0, 0, 90));
+        GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, this.gameObject.transform);
+        newWeapon.transform.Rotate(new Vector3(0, 90, 90));
         Weapon weaponScript = (Weapon)newWeapon.GetComponent(typeof(Weapon));
-        weaponScript.SetVariables(PlayerObject);
+        weaponScript.SetVariables(this.gameObject);
         return newWeapon;
     }
 }

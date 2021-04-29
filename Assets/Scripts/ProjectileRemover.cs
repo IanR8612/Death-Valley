@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ProjectileRemover : MonoBehaviour
 {
-    public GameObject Projectile;
-    private float SecondsUntilDeath = 1.5f;
+    public float SecondsUntilDeath = 1.5f;
     
     private void Start()
     {
@@ -20,6 +19,6 @@ public class ProjectileRemover : MonoBehaviour
 
     private void Death()
     {
-        Destroy(Projectile);
+        Destroy(this.gameObject);
     }
 }

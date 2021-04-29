@@ -69,7 +69,6 @@ public class Weapon : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-        print("YES");
         canPickUp = true;
         otherObject = other.gameObject;
         }
@@ -79,7 +78,6 @@ public class Weapon : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-        print("NO");
         canPickUp = false;
         otherObject = null;
         }
