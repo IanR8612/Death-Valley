@@ -8,7 +8,9 @@ public class EnemyProjectile : MonoBehaviour
 
     private Rigidbody rb;
 
-    private Player player;
+    private GameObject player;
+
+    private Player playerHealth;
     private Vector3 target;
 
     private int damage = 1;
@@ -17,30 +19,20 @@ public class EnemyProjectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        player = GameObject.FindObjectOfType<Player>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.GetComponent<Player>();
 
         target = (player.transform.position - transform.position).normalized * Speed;
         rb.velocity = new Vector2(target.x, target.y);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (this.gameObject.tag == other.gameObject.tag)
+        if (other.gameObject.tag == "Player")
         {
-            return;
-        }
-        else if (other.gameObject.tag == "Wall")
-        {
+            other.GetComponent<Player>();
+            playerHealth.TakeDamage(damage);
             Destroy(this.gameObject);
-        }
-        else if (other.gameObject.tag == "Player")
-        {
-            other.GetComponent<Player>().TakeDamage(damage);
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            return;
         }
     }
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1844219350366090882}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a962cca31c4de154686170b2ba2e7674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectileObject: {fileID: 8062602826814360393}
 --- !u!114 &7196064762317723771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bb4f3f62778f24bb41eaf2fd17beeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectile: {fileID: 8062602826814360393}
+  SecondsUntilDeath: 1.5
 --- !u!54 &1844219350366090882
 Rigidbody:
   m_ObjectHideFlags: 0
