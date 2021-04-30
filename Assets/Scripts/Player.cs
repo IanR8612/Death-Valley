@@ -6,16 +6,11 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public Camera Camera;
-    public GameObject PlayerObject;
     public GameObject WeaponSlotOnePrefab;
-    public GameObject WeaponSlotTwoPrefab;
     private GameObject weaponSlotOne;
-    private GameObject weaponSlotTwo;
     private float moveSpeed = 0.1f;
     private int health = 5;
     private int killCount = 0;
-
-    // to-do: remove the second weapon slot
 
     public void TakeDamage(int damage)
     {
@@ -29,9 +24,15 @@ public class Player : MonoBehaviour
         killCount += 1;
     }
 
+    public void PickUpNewWeapon(GameObject weapon)
+    {
+        Destroy(weaponSlotOne.gameObject);
+        weaponSlotOne = weapon;
+    }
+
     private void Die()
     {
-        Destroy(PlayerObject);
+        Destroy(this.gameObject);
     }
 
     private void Start()
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector3 newPosition = PlayerObject.transform.position;
+        Vector3 newPosition = this.gameObject.transform.position;
         
         if (Input.GetKey("w"))
         {
@@ -65,48 +66,28 @@ public class Player : MonoBehaviour
         {
             newPosition.x += moveSpeed;
         }
-        if (Input.GetKeyDown("space"))
-        {
-            SwitchActiveWeapons();
-        }
 
-        PlayerObject.transform.position = newPosition;
+        this.gameObject.transform.position = newPosition;
     }
 
     private void LookAtMouse()
     {
         Vector3 mousePosition = Camera.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
-        PlayerObject.transform.LookAt(mousePosition);
+        this.gameObject.transform.LookAt(mousePosition);
     }
 
     private void InitializeWeapons()
     {
         weaponSlotOne = InstantiateWeaponPrefab(WeaponSlotOnePrefab);
-        weaponSlotTwo = InstantiateWeaponPrefab(WeaponSlotTwoPrefab);
-        weaponSlotTwo.SetActive(false);
     }
 
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
     {
-        GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, PlayerObject.transform);
-        newWeapon.transform.Rotate(new Vector3(0, 0, -90));
+        GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, this.gameObject.transform);
+        newWeapon.transform.Rotate(new Vector3(0, 90, 90));
         Weapon weaponScript = (Weapon)newWeapon.GetComponent(typeof(Weapon));
-        weaponScript.SetVariables(PlayerObject);
+        weaponScript.SetVariables(this.gameObject);
         return newWeapon;
-    }
-
-    private void SwitchActiveWeapons()
-    {
-        if (weaponSlotOne.activeSelf == true)
-        {
-            weaponSlotOne.SetActive(false);
-            weaponSlotTwo.SetActive(true);
-        }
-        else
-        {
-            weaponSlotOne.SetActive(true);
-            weaponSlotTwo.SetActive(false);
-        }
     }
 }

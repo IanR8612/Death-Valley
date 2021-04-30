@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject EnemyObject;
     private int health = 5;
 
     public void TakeDamage(int damage)
     {
         health -= damage;
-        if (health == 0)
+        if (health <= 0)
             Die();
     }
 
     private void Die()
     {
-        Destroy(EnemyObject);
+        Destroy(this.gameObject);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddToKillCount();
     }
 }
