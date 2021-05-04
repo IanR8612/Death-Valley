@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         this.gameObject.tag = team;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (this.gameObject.tag == other.gameObject.tag)
         {
