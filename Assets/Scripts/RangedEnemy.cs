@@ -15,35 +15,34 @@ public class RangedEnemy : Enemy
 
     private Transform player;
     public GameObject EnemyProjectile;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = this.GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody2D>();
         timeBtwShots = StartTimeBtwShots;
     }
 
     private void Update()
     {
-        transform.LookAt(player);
 
         if (player != null)
         {
-            if (Vector3.Distance(transform.position, player.position) > StoppingDistance)
+            /*if (Vector2.Distance(transform.position, player.position) > StoppingDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
             }
 
-            else if (Vector3.Distance(transform.position, player.position) < StoppingDistance && Vector3.Distance(transform.position, player.position) > RetreatDistance)
+            else if (Vector2.Distance(transform.position, player.position) < StoppingDistance && Vector2.Distance(transform.position, player.position) > RetreatDistance)
             {
                 transform.position = this.transform.position;
             }
 
-            else if (Vector3.Distance(transform.position, player.position) < RetreatDistance)
+            else if (Vector2.Distance(transform.position, player.position) < RetreatDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
-            }
+                transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
+            }*/
 
 
             if (timeBtwShots <= 0)

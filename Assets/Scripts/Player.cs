@@ -10,10 +10,10 @@ public class Player : MonoBehaviour
     public GameObject WeaponParent;
     private GameObject weaponSlotOne;
     private float moveSpeed = 0.1f;
-    private int health = 5;
+    private float health = 5;
     private int killCount = 0;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         if (health == 0)

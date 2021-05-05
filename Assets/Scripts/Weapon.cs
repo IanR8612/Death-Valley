@@ -12,7 +12,7 @@ public class Weapon : MonoBehaviour
     public float RandomSpeedMultiplier = 0.1f;
     public float Spread = 0.001f;
     public int ProjectilesPerShot = 1;
-    public int Damage = 1;
+    public float Damage = 1;
     private bool canPickUp = false;
     private bool canFire = true;
     private GameObject otherObject;
