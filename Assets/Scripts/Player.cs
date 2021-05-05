@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public GameObject WeaponSlotOnePrefab;
     public GameObject WeaponParent;
     private GameObject weaponSlotOne;
-    private float moveSpeed = 0.1f;
+    public float moveSpeed = 1.0f;
     private int health = 5;
     private int killCount = 0;
 
@@ -43,8 +43,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        HandleMovement();
         LookAtMouse();
+    }
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
     }
 
     private void HandleMovement()
