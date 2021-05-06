@@ -7,12 +7,13 @@ public class Player : MonoBehaviour
 {
     public Camera Camera;
     public GameObject WeaponSlotOnePrefab;
+    public GameObject WeaponParent;
     private GameObject weaponSlotOne;
     private float moveSpeed = 0.1f;
-    private int health = 5;
+    private float health = 5;
     private int killCount = 0;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         if (health == 0)
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
     {
         Destroy(weaponSlotOne.gameObject);
         weaponSlotOne = weapon;
+        weaponSlotOne.transform.SetParent(WeaponParent.transform);
     }
 
     private void Die()
@@ -74,7 +76,7 @@ public class Player : MonoBehaviour
     {
         Vector3 mousePosition = Camera.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
-        this.gameObject.transform.LookAt(mousePosition);
+        WeaponParent.transform.LookAt(mousePosition);
     }
 
     private void InitializeWeapons()
@@ -85,7 +87,8 @@ public class Player : MonoBehaviour
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
     {
         GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, this.gameObject.transform);
-        newWeapon.transform.Rotate(new Vector3(0, 90, 90));
+        newWeapon.transform.SetParent(WeaponParent.transform);
+        newWeapon.transform.Rotate(new Vector3(0, 0, -90));
         Weapon weaponScript = (Weapon)newWeapon.GetComponent(typeof(Weapon));
         weaponScript.SetVariables(this.gameObject);
         return newWeapon;

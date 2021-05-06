@@ -12,7 +12,7 @@ public class Weapon : MonoBehaviour
     public float RandomSpeedMultiplier = 0.1f;
     public float Spread = 0.001f;
     public int ProjectilesPerShot = 1;
-    public int Damage = 1;
+    public float Damage = 1;
     private bool canPickUp = false;
     private bool canFire = true;
     private GameObject otherObject;
@@ -39,11 +39,11 @@ public class Weapon : MonoBehaviour
         {
             float randomRotation = Random.Range(-Spread, Spread);
             float randomSpeedMultiplier = Random.Range(-RandomSpeedMultiplier + 1, RandomSpeedMultiplier + 1);
-            GameObject newProjectile = Instantiate(Projectile, ProjectileSpawnLocation.transform.position, PlayerObject.transform.rotation);
+            GameObject newProjectile = Instantiate(Projectile, ProjectileSpawnLocation.transform.position, this.gameObject.transform.rotation);
             newProjectile.GetComponent<Projectile>().SetDamage(Damage);
             newProjectile.GetComponent<Projectile>().SetTeam(PlayerObject.gameObject.tag);
-            newProjectile.transform.Rotate(new Vector3(randomRotation, 0, 0));
-            newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * (ProjectileSpeed * randomSpeedMultiplier));
+            newProjectile.transform.Rotate(new Vector3(0, 0, randomRotation));
+            newProjectile.GetComponent<Rigidbody2D>().AddForce(newProjectile.transform.right * (ProjectileSpeed * randomSpeedMultiplier));
         }
         canFire = false;
         StartCoroutine(Cooldown());
@@ -66,7 +66,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -75,7 +75,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

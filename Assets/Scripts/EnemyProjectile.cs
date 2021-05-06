@@ -6,19 +6,19 @@ public class EnemyProjectile : MonoBehaviour
 {
     public float Speed;
 
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     private GameObject player;
 
     private Player playerHealth;
-    private Vector3 target;
+    private Vector2 target;
 
-    private int damage = 1;
+    public float damage = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<Player>();
 
@@ -26,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
         rb.velocity = new Vector2(target.x, target.y);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {

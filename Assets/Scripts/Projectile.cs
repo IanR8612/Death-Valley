@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private int damage;
+    private float damage;
 
-    public void SetDamage(int newDamage)
+    public void SetDamage(float newDamage)
     {
         damage = newDamage;
     }
@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         this.gameObject.tag = team;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (this.gameObject.tag == other.gameObject.tag)
         {
