@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private int health = 5;
-
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -15,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject);        
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddToKillCount();
     }
 }

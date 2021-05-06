@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     private bool canFire = true;
     private GameObject otherObject;
 
+
     public void SetVariables(GameObject playerObject)
     {
         PlayerObject = playerObject;

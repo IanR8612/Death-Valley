@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class WaveSpawner : MonoBehaviour
     {
         public string name;
         public Transform enemy;
+        public Transform enemyRange;
         public int count;
         public float rate;
     }
@@ -29,6 +31,8 @@ public class WaveSpawner : MonoBehaviour
 
     private SpawnState state = SpawnState.COUNTING;
 
+    public Text gunSpawn;
+
     void Start()
     {
         if (spawnPoints.Length == 0)
@@ -42,11 +46,18 @@ public class WaveSpawner : MonoBehaviour
     void Update()
     {
         if (state == SpawnState.WAITING)
-        {
+        {            
             if (!EnemyIsAlive())
             {
-                WaveCompleted();
+                //Debug.Log("All enemies dead");
+                //gunSpawn.text = "spawn";
+                if (gunSpawn.text == "spawn")
+                {
+                    Invoke("PickUpWeapon", 1);
+                    //PickUpWeapon();
+                }
             }
+            //Debug.Log("Waiting");
             else
             {
                 return;
@@ -55,9 +66,12 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveCountdown <= 0)
         {
-            if (state != SpawnState.SPAWNING)
+            if (gunSpawn.text == "despawn")
             {
-                StartCoroutine(SpawnWave(waves[nextWave]));
+                if (state != SpawnState.SPAWNING)
+                {
+                    StartCoroutine(SpawnWave(waves[nextWave]));
+                }
             }
         }
         else
@@ -66,13 +80,29 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
+    void PickUpWeapon()
+    {               
+        waveCountdown = timeBetweenWaves;
+        if (GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
+        {
+            WaveCompleted();
+        }
+        //else
+        //{
+        //    PickUpWeapon();
+        //}
+        //add button to skip weapon pickup
+    }
+
     void WaveCompleted()
     {
         Debug.Log("Wave Completed");
         state = SpawnState.COUNTING;
-        waveCountdown = timeBetweenWaves;
+        //waveCountdown = timeBetweenWaves;
         if (nextWave + 1 > waves.Length - 1)
         {
+            //add if statement to check if there are any weapons in the game, if not - send to next wave
+            //also check if next round button has been clicked?
             nextWave = 0;
             //ADD ON STAT MULTIPLIER, GAME FINISHED SCREEN
             waveCounter += 1;
@@ -88,10 +118,12 @@ public class WaveSpawner : MonoBehaviour
     {
         searchCountdown -= Time.deltaTime;
         if (searchCountdown <= 0f)
-        {
+        {            
             searchCountdown = 1f;
-            if (GameObject.FindGameObjectsWithTag("Enemy") == null)
+            if (GameObject.FindGameObjectWithTag("Enemy") == null)
             {
+                gunSpawn.text = "spawn";
+                Debug.Log("Enemies dead, returning false");
                 return false;
             }
         }
@@ -104,11 +136,13 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;        
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
+            SpawnEnemy(_wave.enemy);          
+            //SpawnEnemy(_wave.enemyRange);
             yield return new WaitForSeconds(1f / _wave.rate);
             //_wave.delay in () for a delay
         }
         state = SpawnState.WAITING;
+        //Debug.Log("Waiting");
 
         yield break;
     }

@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3970113124282061714}
   - component: {fileID: 4464960353126489440}
   m_Layer: 0
-  m_Name: TestMachineGun
-  m_TagString: Untagged
+  m_Name: SMG
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

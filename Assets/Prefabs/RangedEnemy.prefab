@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4392856484835231323}
   - component: {fileID: -6851402408186789691}
   m_Layer: 0
-  m_Name: TestEnemy
+  m_Name: RangedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f524082af720bf4da9c68404661720a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesAlive: 0
+  enemyCount: {fileID: 2498378692316485536, guid: f1ee4247c33187e478e96ee702e563db,
+    type: 3}
   EnemyObject: {fileID: 2807414285469767329}
   Speed: 4
   StoppingDistance: 7
