@@ -27,6 +27,12 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (FollowTransform == null)
+        {
+            Destroy(this);
+            return;
+        }
+        
         float borderLeft = CameraLeftBorder.transform.position.x + cameraHalfWidth;
         float borderRight = CameraRightBorder.transform.position.x - cameraHalfWidth;
         float borderTop = CameraTopBorder.transform.position.y - cameraHalfHeight;

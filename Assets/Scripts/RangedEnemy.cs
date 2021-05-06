@@ -15,18 +15,22 @@ public class RangedEnemy : Enemy
 
     private Transform player;
     public GameObject EnemyProjectile;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = this.GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody2D>();
         timeBtwShots = StartTimeBtwShots;
     }
 
     private void Update()
     {
         transform.LookAt(player);
+        // Had to add this so that the 2D hitbox would work properly
+        // (it gets flattened otherwise)
+        // -Ian
+        transform.Rotate(0, 90, 0);
 
         if (player != null)
         {
@@ -56,5 +60,10 @@ public class RangedEnemy : Enemy
                 timeBtwShots -= Time.deltaTime;
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("what what");
     }
 }
