@@ -61,7 +61,6 @@ public class Weapon : MonoBehaviour
         {
             PlayerObject = otherObject;
             this.gameObject.transform.SetParent(PlayerObject.transform);
-            this.gameObject.transform.position.Set(0f, 0f, 0f);
             PlayerObject.GetComponent<Player>().PickUpNewWeapon(this.gameObject);
         }
     }

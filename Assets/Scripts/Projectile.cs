@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
         }
         else if (other.gameObject.tag == "Enemy")
         {
-            other.GetComponent<Enemy>().TakeDamage(damage);
+            other.GetComponent<Enemy>().TakeDamage((int)damage);
             Destroy(this.gameObject);
         }
         else if (other.gameObject.tag == "EnemyProjectile")
