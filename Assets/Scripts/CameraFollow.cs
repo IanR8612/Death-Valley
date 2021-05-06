@@ -31,12 +31,14 @@ public class CameraFollow : MonoBehaviour
         float borderRight = CameraRightBorder.transform.position.x - cameraHalfWidth;
         float borderTop = CameraTopBorder.transform.position.y - cameraHalfHeight;
         float borderBottom = CameraBottomBorder.transform.position.y + cameraHalfHeight;
-
-        smoothPosition = Vector3.Lerp(this.transform.position,
+        if (FollowTransform != null)
+        {
+            smoothPosition = Vector3.Lerp(this.transform.position,
             new Vector3(Mathf.Clamp(FollowTransform.position.x, borderLeft, borderRight),
             Mathf.Clamp(FollowTransform.position.y, borderBottom, borderTop),
             this.transform.position.z), smoothSpeed);
 
-        this.transform.position = smoothPosition;
+            this.transform.position = smoothPosition;
+        }
     }
 }

@@ -13,7 +13,7 @@ public class EnemyProjectile : MonoBehaviour
     private Player playerHealth;
     private Vector2 target;
 
-    private float damage = 1;
+    public float damage = 1;
 
     // Start is called before the first frame update
     void Start()

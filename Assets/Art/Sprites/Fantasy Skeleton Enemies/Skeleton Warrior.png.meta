@@ -1,0 +1,1220 @@
+fileFormatVersion: 2
+guid: 101881cfc826b4d38be6b7d79a051751
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8558309472689944483
+    second: Idle0Melee
+  - first:
+      213: -7268809918199601367
+    second: Idle1Melee
+  - first:
+      213: -2103539762985584795
+    second: Idle2Melee
+  - first:
+      213: -4078554521193569826
+    second: Idle3Melee
+  - first:
+      213: -3773440999569164998
+    second: Idle4Melee
+  - first:
+      213: -8738104783507442576
+    second: Idle5Melee
+  - first:
+      213: 1640352609331199756
+    second: Idle6Melee
+  - first:
+      213: 5860225943962074194
+    second: Idle7Melee
+  - first:
+      213: -5544222554686728122
+    second: Attack0Melee
+  - first:
+      213: 961181998260568648
+    second: Attack1Melee
+  - first:
+      213: -976277863968368388
+    second: Attack2Melee
+  - first:
+      213: 8635078456891946082
+    second: Attack3Melee
+  - first:
+      213: 7218703383904265260
+    second: Attack4Melee
+  - first:
+      213: 1040716984578748445
+    second: Attack5Melee
+  - first:
+      213: 8518945629189558737
+    second: Attack6Melee
+  - first:
+      213: 7255048032533995574
+    second: Attack7Melee
+  - first:
+      213: 7164483918395941062
+    second: Attack8Melee
+  - first:
+      213: 2868098001261543565
+    second: Attack9Melee
+  - first:
+      213: -9188543175420427208
+    second: Attack10Melee
+  - first:
+      213: -7238304568322400539
+    second: Attack11Melee
+  - first:
+      213: -189285185947837432
+    second: Attack12Melee
+  - first:
+      213: 6638100946421007562
+    second: Walk0Melee
+  - first:
+      213: 4221377621742469399
+    second: Walk1Melee
+  - first:
+      213: -5153613751853558168
+    second: Walk2Melee
+  - first:
+      213: -1203331707390400905
+    second: Walk3Melee
+  - first:
+      213: -4565608471944891025
+    second: Walk4Melee
+  - first:
+      213: -3635191582132769641
+    second: Walk5Melee
+  - first:
+      213: 381697478164378683
+    second: Skeleton Warrior_27
+  - first:
+      213: 1020414852482633119
+    second: Flinch0Melee
+  - first:
+      213: -7163798882507139985
+    second: Flinch1Melee
+  - first:
+      213: 3285123046235156421
+    second: Flinch2Melee
+  - first:
+      213: 6538726560154918175
+    second: Flinch3Melee
+  - first:
+      213: -8096774886831003707
+    second: Flinch4Melee
+  - first:
+      213: 7941591988902663462
+    second: Death0Melee
+  - first:
+      213: 3643615481352457000
+    second: Skeleton Warrior_34
+  - first:
+      213: 5907200044879636470
+    second: Death2Melee
+  - first:
+      213: -6757721449923507480
+    second: Death3Melee
+  - first:
+      213: 6937702189793259930
+    second: Death4Melee
+  - first:
+      213: 2667724235439545294
+    second: Death5Melee
+  - first:
+      213: -8594982793199713187
+    second: Death6Melee
+  - first:
+      213: 7740319389804816083
+    second: Death7Melee
+  - first:
+      213: 6756482997622045983
+    second: Death8Melee
+  - first:
+      213: 140155500138671467
+    second: Skeleton Warrior_42
+  - first:
+      213: -781139701217181249
+    second: Death1Melee
+  - first:
+      213: 1406994640205417696
+    second: Skeleton Warrior_44
+  - first:
+      213: -8546639531090003322
+    second: Skeleton Warrior_45
+  - first:
+      213: -1127476477787274833
+    second: Skeleton Warrior_46
+  - first:
+      213: -6545215758627420188
+    second: Skeleton Warrior_47
+  - first:
+      213: -6568066921861101277
+    second: Death9Melee
+  - first:
+      213: 2884815726602620917
+    second: Death10Melee
+  - first:
+      213: 5810077283137954827
+    second: Death11Melee
+  - first:
+      213: -7039854616731862306
+    second: Death12Melee
+  - first:
+      213: 5793199004051224248
+    second: Skeleton Warrior_52
+  - first:
+      213: -3741033909597843156
+    second: Skeleton Warrior_53
+  - first:
+      213: 3729220316644443213
+    second: Skeleton Warrior_54
+  - first:
+      213: 5586582738522572838
+    second: Skeleton Warrior_55
+  - first:
+      213: -1737882262091939502
+    second: Skeleton Warrior_56
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle0Melee
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 197
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a77b8d1f1935c670800000000000000
+      internalID: 8558309472689944483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle1Melee
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 197
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92760e524efff1b90800000000000000
+      internalID: -7268809918199601367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2Melee
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 197
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567b5580bb9bec2e0800000000000000
+      internalID: -2103539762985584795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3Melee
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 197
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1a137a5401667c0800000000000000
+      internalID: -4078554521193569826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle4Melee
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 197
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35f8c7476b02abc0800000000000000
+      internalID: -3773440999569164998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle5Melee
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 197
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b5e0fef30cb680800000000000000
+      internalID: -8738104783507442576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle6Melee
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 197
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f3299d104b3c610800000000000000
+      internalID: 1640352609331199756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle7Melee
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 197
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c336d7274b35150800000000000000
+      internalID: 5860225943962074194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack0Melee
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 148
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648503806f6fe03b0800000000000000
+      internalID: -5544222554686728122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack1Melee
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 148
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84242d25fedc65d00800000000000000
+      internalID: 961181998260568648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack2Melee
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 149
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8961c84709372f0800000000000000
+      internalID: -976277863968368388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3Melee
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 149
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2643cae1b16f5d770800000000000000
+      internalID: 8635078456891946082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack4Melee
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 149
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2426883b7cfd2460800000000000000
+      internalID: 7218703383904265260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack5Melee
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 149
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d103881659e517e00800000000000000
+      internalID: 1040716984578748445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack6Melee
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 149
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1d5b81aef593670800000000000000
+      internalID: 8518945629189558737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack7Melee
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 149
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630e5972fbb1fa460800000000000000
+      internalID: 7255048032533995574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack8Melee
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 149
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c02dfa2a2c5d6360800000000000000
+      internalID: 7164483918395941062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack9Melee
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 149
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80c332bfe78dc720800000000000000
+      internalID: 2868098001261543565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack10Melee
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 149
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834c9b93aacbb7080800000000000000
+      internalID: -9188543175420427208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack11Melee
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 149
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee5e0568506c8b90800000000000000
+      internalID: -7238304568322400539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack12Melee
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 149
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cd55250268f5df0800000000000000
+      internalID: -189285185947837432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk0Melee
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 101
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4cb9ef3a54f1c50800000000000000
+      internalID: 6638100946421007562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk1Melee
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 101
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7114eb6c498559a30800000000000000
+      internalID: 4221377621742469399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk2Melee
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 101
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8665333099faa78b0800000000000000
+      internalID: -5153613751853558168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk3Melee
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 101
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e70a0038ec4fe0800000000000000
+      internalID: -1203331707390400905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk4Melee
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 101
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65f53ec843b3a0c0800000000000000
+      internalID: -4565608471944891025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk5Melee
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 101
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c6c7024843d8dc0800000000000000
+      internalID: -3635191582132769641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flinch0Melee
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 53
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d82c5e6ed392e00800000000000000
+      internalID: 1020414852482633119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flinch1Melee
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 53
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6452dd2fd2159c90800000000000000
+      internalID: -7163798882507139985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flinch2Melee
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 53
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfab46510a179d20800000000000000
+      internalID: 3285123046235156421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flinch3Melee
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 53
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d127da9293eba50800000000000000
+      internalID: 6538726560154918175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flinch4Melee
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 53
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c76224932a72af80800000000000000
+      internalID: -8096774886831003707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death0Melee
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62591a966d3363e60800000000000000
+      internalID: 7941591988902663462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death2Melee
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 5
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7e834a4279af150800000000000000
+      internalID: 5907200044879636470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death3Melee
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 5
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea854e2520c732a0800000000000000
+      internalID: -6757721449923507480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death4Melee
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91b314526ba74060800000000000000
+      internalID: 6937702189793259930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death5Melee
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 5
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb1314de09a50520800000000000000
+      internalID: 2667724235439545294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death6Melee
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 5
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d548cb010bc78b880800000000000000
+      internalID: -8594982793199713187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death7Melee
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 5
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6626d99732b6b60800000000000000
+      internalID: 7740319389804816083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death8Melee
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 4
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d7a3c2d79d3cd50800000000000000
+      internalID: 6756482997622045983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death1Melee
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 5
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1cef49495d825f0800000000000000
+      internalID: -781139701217181249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death9Melee
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 5
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329c9750fe989d4a0800000000000000
+      internalID: -6568066921861101277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death10Melee
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 5
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff0c927e9ce80820800000000000000
+      internalID: 2884815726602620917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death11Melee
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 5
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b042103818a81a050800000000000000
+      internalID: 5810077283137954827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death12Melee
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 5
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edabd4b56896d4e90800000000000000
+      internalID: -7039854616731862306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
