@@ -11,9 +11,9 @@ public class EnemyProjectile : MonoBehaviour
     private GameObject player;
 
     private Player playerHealth;
-    private Vector3 target;
+    private Vector2 target;
 
-    private int damage = 1;
+    public float damage = 1;
 
     // Start is called before the first frame update
     void Start()

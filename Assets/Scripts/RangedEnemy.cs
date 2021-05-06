@@ -26,28 +26,23 @@ public class RangedEnemy : Enemy
 
     private void Update()
     {
-        transform.LookAt(player);
-        // Had to add this so that the 2D hitbox would work properly
-        // (it gets flattened otherwise)
-        // -Ian
-        transform.Rotate(0, 90, 0);
 
         if (player != null)
         {
-            if (Vector3.Distance(transform.position, player.position) > StoppingDistance)
+            /*if (Vector2.Distance(transform.position, player.position) > StoppingDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
             }
 
-            else if (Vector3.Distance(transform.position, player.position) < StoppingDistance && Vector3.Distance(transform.position, player.position) > RetreatDistance)
+            else if (Vector2.Distance(transform.position, player.position) < StoppingDistance && Vector2.Distance(transform.position, player.position) > RetreatDistance)
             {
                 transform.position = this.transform.position;
             }
 
-            else if (Vector3.Distance(transform.position, player.position) < RetreatDistance)
+            else if (Vector2.Distance(transform.position, player.position) < RetreatDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
-            }
+                transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
+            }*/
 
 
             if (timeBtwShots <= 0)
