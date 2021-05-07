@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
         Destroy(weaponSlotOne.gameObject);
         weaponSlotOne = weapon;
         weaponSlotOne.transform.SetParent(WeaponParent.transform);
-        weaponSlotOne.transform.Equals(WeaponParent.transform);
+        weaponSlotOne.transform.SetPositionAndRotation(WeaponParent.transform.position, WeaponParent.transform.rotation);
+        weaponSlotOne.transform.Rotate(0, -90, 0);
     }
 
     private void Die()
