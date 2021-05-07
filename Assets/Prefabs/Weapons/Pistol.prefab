@@ -55,7 +55,7 @@ MonoBehaviour:
   RandomSpeedMultiplier: 0
   Spread: 3
   ProjectilesPerShot: 1
-  Damage: 1
+  Damage: 2
 --- !u!61 &8407464115997221798
 BoxCollider2D:
   m_ObjectHideFlags: 0

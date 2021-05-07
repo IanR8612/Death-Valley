@@ -33,6 +33,6 @@ public class EnemyProjectile : MonoBehaviour
             other.GetComponent<Player>();
             playerHealth.TakeDamage(damage);
             Destroy(this.gameObject);
-        }
+        }       
     }
 }

@@ -77,7 +77,7 @@ public class WeaponSpawner : MonoBehaviour
             }                
         }
 
-        if (roundCounter <= 10)
+        else if (roundCounter <= 10)
         {
             chosenWeapon = MediumWeapons[Random.Range(0, MediumWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
@@ -87,7 +87,7 @@ public class WeaponSpawner : MonoBehaviour
             }
         }
 
-        if (roundCounter > 10)
+        else if (roundCounter > 10)
         {
             chosenWeapon = StrongWeapons[Random.Range(0, StrongWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
@@ -114,11 +114,15 @@ public class WeaponSpawner : MonoBehaviour
     }
     void SpawnMedWeapon(Transform _weapon)
     {
-
+        Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
+        gunSpawn.text = "despawn";
+        roundCounter += 1;
     }
     void SpawnStrongWeapon(Transform _weapon)
     {
-
+        Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
+        gunSpawn.text = "despawn";
+        roundCounter += 1;
     }
 
     bool EnemyIsAlive()
