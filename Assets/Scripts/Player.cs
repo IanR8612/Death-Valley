@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public GameObject WeaponSlotOnePrefab;
     public GameObject WeaponParent;
     private GameObject weaponSlotOne;
-    private float moveSpeed = 0.1f;
+    public float MoveSpeed = 0.1f;
     private float health = 5;
     private int killCount = 0;
 
@@ -56,19 +56,19 @@ public class Player : MonoBehaviour
         
         if (Input.GetKey("w"))
         {
-            newPosition.y += moveSpeed;
+            newPosition.y += MoveSpeed;
         }
         if (Input.GetKey("s"))
         {
-            newPosition.y -= moveSpeed;
+            newPosition.y -= MoveSpeed;
         }
         if (Input.GetKey("a"))
         {
-            newPosition.x -= moveSpeed;
+            newPosition.x -= MoveSpeed;
         }
         if (Input.GetKey("d"))
         {
-            newPosition.x += moveSpeed;
+            newPosition.x += MoveSpeed;
         }
 
         this.gameObject.transform.position = newPosition;
