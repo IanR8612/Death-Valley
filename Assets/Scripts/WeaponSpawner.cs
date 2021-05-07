@@ -44,16 +44,13 @@ public class WeaponSpawner : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {     
+    {         
         if (!EnemyIsAlive())
         {            
             if (gunSpawn.text == "spawn")
             {
+                gunSpawn.text = "despawn";
                 gunCount = 1;
-                //if (searchTime == 0f)
-                //{
-                //    WeaponCheck();
-                //}
                 WeaponCheck();
             }            
         }
@@ -61,6 +58,14 @@ public class WeaponSpawner : MonoBehaviour
         {
             //searchTime -= Time.deltaTime;
             return;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (Input.GetKeyDown("e"))
+        {
+            Destroy(chosenWeapon);
         }
     }
 
@@ -101,27 +106,28 @@ public class WeaponSpawner : MonoBehaviour
     public void DestroyWeapon()
     {
         //Debug.Log("called");
-        Destroy(chosenWeapon.gameObject);
+        //Destroy(chosenWeapon.gameObject);
+        Destroy(Instantiate(chosenWeapon));
     }
 
     void SpawnWeakWeapon(Transform _weapon)
     {
         //Transform _wpType = WeakWeapons[Random.Range(0, WeakWeapons.Length)];        
         Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        gunSpawn.text = "despawn";
+        //gunSpawn.text = "despawn";
         roundCounter += 1;
         //searchTime = 4f;
     }
     void SpawnMedWeapon(Transform _weapon)
     {
         Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        gunSpawn.text = "despawn";
+        //gunSpawn.text = "despawn";
         roundCounter += 1;
     }
     void SpawnStrongWeapon(Transform _weapon)
     {
         Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        gunSpawn.text = "despawn";
+        //gunSpawn.text = "despawn";
         roundCounter += 1;
     }
 
