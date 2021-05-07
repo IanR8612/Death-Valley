@@ -66,7 +66,7 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveCountdown <= 0)
         {
-            if (gunSpawn.text == "despawn")
+            if (gunSpawn.text == "despawn") //if wavecounter = wavecounter += 1
             {
                 if (state != SpawnState.SPAWNING)
                 {
@@ -106,7 +106,7 @@ public class WaveSpawner : MonoBehaviour
             nextWave = 0;
             //ADD ON STAT MULTIPLIER, GAME FINISHED SCREEN
             waveCounter += 1;
-            Debug.Log("All Waves Complete! Looping...");
+            //Debug.Log("All Waves Complete! Looping...");
         }
         else
         {
@@ -123,7 +123,7 @@ public class WaveSpawner : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Enemy") == null)
             {
                 gunSpawn.text = "spawn";
-                Debug.Log("Enemies dead, returning false");
+                //Debug.Log("Enemies dead, returning false");
                 return false;
             }
         }
@@ -136,7 +136,7 @@ public class WaveSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;        
         for (int i = 0; i < _wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);          
+            SpawnEnemy(_wave.enemy);         
             //SpawnEnemy(_wave.enemyRange);
             yield return new WaitForSeconds(1f / _wave.rate);
             //_wave.delay in () for a delay
