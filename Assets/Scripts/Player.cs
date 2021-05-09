@@ -9,7 +9,9 @@ public class Player : MonoBehaviour
     public GameObject WeaponSlotOnePrefab;
     public GameObject WeaponParent;
     private GameObject weaponSlotOne;
-    public float MoveSpeed = 0.1f;
+    public float MoveSpeed = 20f;
+    public Rigidbody2D rb;
+    private Vector2 movement;
     private float health = 5;
     private int killCount = 0;
 
@@ -46,32 +48,24 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        HandleMovement();
+        MovementInput();
         LookAtMouse();
     }
 
-    private void HandleMovement()
+    private void FixedUpdate()
     {
-        Vector3 newPosition = this.gameObject.transform.position;
-        
-        if (Input.GetKey("w"))
-        {
-            newPosition.y += MoveSpeed;
-        }
-        if (Input.GetKey("s"))
-        {
-            newPosition.y -= MoveSpeed;
-        }
-        if (Input.GetKey("a"))
-        {
-            newPosition.x -= MoveSpeed;
-        }
-        if (Input.GetKey("d"))
-        {
-            newPosition.x += MoveSpeed;
-        }
+        MovementPhysics();
+    }
 
-        this.gameObject.transform.position = newPosition;
+    private void MovementInput()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    private void MovementPhysics()
+    {
+        rb.MovePosition(rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
     }
 
     private void LookAtMouse()

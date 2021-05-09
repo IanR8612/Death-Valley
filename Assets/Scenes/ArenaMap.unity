@@ -46316,12 +46316,6 @@ PrefabInstance:
       objectReference: {fileID: 545761189}
     - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
         type: 3}
-      propertyPath: WeaponSlotOnePrefab
-      value: 
-      objectReference: {fileID: 4898401337790732169, guid: 44c76ca2c9e4ced46852d65189dabb4e,
-        type: 3}
-    - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
-        type: 3}
       propertyPath: moveSpeed
       value: 0.5
       objectReference: {fileID: 0}
@@ -46403,12 +46397,7 @@ PrefabInstance:
     - target: {fileID: 3236427701521261123, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
         type: 3}
       propertyPath: m_UsedByComposite
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6929247315645159337, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae, type: 3}

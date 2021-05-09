@@ -48,9 +48,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 0}
-  WeaponSlotOnePrefab: {fileID: 8296730569805415442, guid: f67f172aa77da3343824bfdde28f97c0,
+  WeaponSlotOnePrefab: {fileID: 5178330289234978566, guid: f67f172aa77da3343824bfdde28f97c0,
     type: 3}
   WeaponParent: {fileID: 8315230561604286711}
+  MoveSpeed: 20
+  rb: {fileID: 6929247315645159337}
 --- !u!50 &6929247315645159337
 Rigidbody2D:
   serializedVersion: 4
@@ -59,19 +61,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2260165516434991753}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &4949479367539580248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -109,7 +111,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2140728669
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 952e8202ae5e82c4681a2ef323e5967a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
