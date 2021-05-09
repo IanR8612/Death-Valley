@@ -17,7 +17,7 @@ public class WaveSpawner : MonoBehaviour
         public float rate;
     }
 
-    public int waveCounter = 0;
+    public int waveCounter = 1;
 
     public Wave[] waves;
     private int nextWave = 0;
@@ -32,13 +32,15 @@ public class WaveSpawner : MonoBehaviour
     private SpawnState state = SpawnState.COUNTING;
 
     public Text gunSpawn;
+    public Text spawnCheck;
+    public Text waveCount;
 
     void Start()
     {
         if (spawnPoints.Length == 0)
         {
             Debug.LogError("Error. No spawn points referenced.");
-        }
+        }        
 
         waveCountdown = timeBetweenWaves;
     }
@@ -70,7 +72,9 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (state != SpawnState.SPAWNING)
                 {
-                    StartCoroutine(SpawnWave(waves[nextWave]));
+                    waveCounter += 1;
+                    StartCoroutine(SpawnWave(waves[nextWave]));                    
+                    waveCount.text = "Wave: " + waveCounter.ToString();
                 }
             }
         }
@@ -105,13 +109,25 @@ public class WaveSpawner : MonoBehaviour
             //also check if next round button has been clicked?
             nextWave = 0;
             //ADD ON STAT MULTIPLIER, GAME FINISHED SCREEN
-            waveCounter += 1;
-            //Debug.Log("All Waves Complete! Looping...");
+            //Debug.Log("All Waves Complete! Looping...");  
+            EnemyCount(waves[nextWave]);
+            EnemyRate(waves[nextWave]);
+            spawnCheck.text = "1";            
         }
         else
         {
             nextWave++;
         }
+    }
+
+    void EnemyRate(Wave _wave)
+    {
+        _wave.rate += 0.1f;
+    }
+
+    void EnemyCount(Wave _wave)
+    {
+        _wave.count += 2;
     }
 
     bool EnemyIsAlive()

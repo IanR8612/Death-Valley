@@ -32,6 +32,7 @@ public class WeaponSpawner : MonoBehaviour
     //private float searchTime = 4f;
 
     public Text gunSpawn;
+    public Text spawnCheck;
 
     // Start is called before the first frame update
     void Start()
@@ -61,14 +62,6 @@ public class WeaponSpawner : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (Input.GetKeyDown("e"))
-        {
-            Destroy(chosenWeapon);
-        }
-    }
-
     void WeaponCheck()
     {
         if (roundCounter <= 5)
@@ -77,8 +70,11 @@ public class WeaponSpawner : MonoBehaviour
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
                 //Invoke("SpawnWeakWeapon(chosenWeapon)", 1);
-                SpawnWeakWeapon(chosenWeapon);
-                gunCount = 2;
+                if (spawnCheck.text == "1")
+                {
+                    SpawnWeakWeapon(chosenWeapon);
+                    gunCount = 2;
+                }
             }                
         }
 
@@ -87,8 +83,11 @@ public class WeaponSpawner : MonoBehaviour
             chosenWeapon = MediumWeapons[Random.Range(0, MediumWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
-                SpawnMedWeapon(chosenWeapon);
-                gunCount = 2;
+                if (spawnCheck.text == "1")
+                {
+                    SpawnMedWeapon(chosenWeapon);
+                    gunCount = 2;
+                }
             }
         }
 
@@ -97,17 +96,13 @@ public class WeaponSpawner : MonoBehaviour
             chosenWeapon = StrongWeapons[Random.Range(0, StrongWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
-                SpawnStrongWeapon(chosenWeapon);
-                gunCount = 2;
+                if (spawnCheck.text == "1")
+                {
+                    SpawnStrongWeapon(chosenWeapon);
+                    gunCount = 2;
+                }
             }
         }
-    }
-
-    public void DestroyWeapon()
-    {
-        //Debug.Log("called");
-        //Destroy(chosenWeapon.gameObject);
-        Destroy(Instantiate(chosenWeapon));
     }
 
     void SpawnWeakWeapon(Transform _weapon)
@@ -117,18 +112,21 @@ public class WeaponSpawner : MonoBehaviour
         //gunSpawn.text = "despawn";
         roundCounter += 1;
         //searchTime = 4f;
+        spawnCheck.text = "0";
     }
     void SpawnMedWeapon(Transform _weapon)
     {
         Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
         //gunSpawn.text = "despawn";
         roundCounter += 1;
+        spawnCheck.text = "0";
     }
     void SpawnStrongWeapon(Transform _weapon)
     {
         Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
         //gunSpawn.text = "despawn";
         roundCounter += 1;
+        spawnCheck.text = "0";
     }
 
     bool EnemyIsAlive()
