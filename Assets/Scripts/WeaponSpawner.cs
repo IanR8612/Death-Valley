@@ -47,13 +47,15 @@ public class WeaponSpawner : MonoBehaviour
     void Update()
     {         
         if (!EnemyIsAlive())
-        {            
-            if (gunSpawn.text == "spawn")
+        {
+            gunCount = 1;
+            WeaponCheck();
+            /*if (gunSpawn.text == "spawn")
             {
                 gunSpawn.text = "despawn";
                 gunCount = 1;
                 WeaponCheck();
-            }            
+            }    */        
         }
         else
         {
