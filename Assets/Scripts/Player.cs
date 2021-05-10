@@ -89,4 +89,9 @@ public class Player : MonoBehaviour
         weaponScript.SetVariables(this.gameObject);
         return newWeapon;
     }
+
+    public float ShowHealth()
+    {
+        return health;
+    }
 }
