@@ -710,12 +710,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fd12ba003864db1ae3a8114c4eb296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 3225183198831510054}
   Health: 5
   MaxHealth: 5
   Healthbar: {fileID: 6236135102816623233}
-  AttackDistance: 2
-  Timer: 3
-  damage: 1
+  Damage: 1
+  AttackDelay: 0
+  AttackRange: 0
+  target: {fileID: 2260165516434991764, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae, type: 3}
   Raycast: {fileID: 314596828578093754}
   RaycastMask:
     serializedVersion: 2

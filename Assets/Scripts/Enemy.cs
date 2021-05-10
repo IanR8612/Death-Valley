@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
+    public Animator animator;
+
     public float Health;
     public float MaxHealth = 5;
 
@@ -23,6 +25,10 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         Health -= damage;
+        if(Health > 0)
+        {
+            animator.SetTrigger("Hurt");
+        }
         Healthbar.SetHealth(Health, MaxHealth);
         if (Health <= 0)
             Die();
@@ -30,7 +36,10 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        Destroy(this.gameObject);
+        animator.SetBool("isDead", true);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddToKillCount();
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false; //disable enemy
+        Destroy(gameObject, 1.0f);
     }
 }
