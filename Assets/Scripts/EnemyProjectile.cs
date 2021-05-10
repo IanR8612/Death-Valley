@@ -9,8 +9,6 @@ public class EnemyProjectile : MonoBehaviour
     private Rigidbody2D rb;
 
     private GameObject player;
-
-    private Player playerHealth;
     private Vector2 target;
 
     public float damage = 1;
@@ -20,7 +18,6 @@ public class EnemyProjectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<Player>();
 
         target = (player.transform.position - transform.position).normalized * Speed;
         rb.velocity = new Vector2(target.x, target.y);
@@ -30,9 +27,11 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<Player>();
-            playerHealth.TakeDamage(damage);
+            player.GetComponent<Player>().TakeDamage(damage);
             Destroy(this.gameObject);
-        }       
+            Debug.Log(player.GetComponent<Player>().ShowHealth());
+        }
+
+        Physics2D.IgnoreLayerCollision(10, 11);
     }
 }

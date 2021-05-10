@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour
         this.gameObject.tag = team;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    /*private void OnTriggerStay2D(Collider2D other)
     {
         if (this.gameObject.tag == other.gameObject.tag)
         {
@@ -35,7 +35,14 @@ public class Projectile : MonoBehaviour
         {
             return;
         }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            other.GetComponent<Enemy>().TakeDamage(damage);
+            Destroy(this.gameObject);
+        }
     }
-
-
 }

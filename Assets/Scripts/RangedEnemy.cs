@@ -17,8 +17,11 @@ public class RangedEnemy : Enemy
     public GameObject EnemyProjectile;
     private Rigidbody2D rb;
 
+    private Animator anim;
+
     private void Start()
     {
+        anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = this.GetComponent<Rigidbody2D>();
         timeBtwShots = StartTimeBtwShots;
@@ -49,10 +52,12 @@ public class RangedEnemy : Enemy
             {
                 Instantiate(EnemyProjectile, transform.position, Quaternion.identity);
                 timeBtwShots = StartTimeBtwShots;
+                anim.SetBool("Attack", true);
             }
             else
             {
                 timeBtwShots -= Time.deltaTime;
+                anim.SetBool("Attack", false);
             }
         }
     }
