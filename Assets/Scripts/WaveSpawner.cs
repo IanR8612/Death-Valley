@@ -153,7 +153,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < _wave.count; i++)
         {
             SpawnEnemy(_wave.enemy);         
-            //SpawnEnemy(_wave.enemyRange);
+            SpawnEnemy(_wave.enemyRange);
             yield return new WaitForSeconds(1f / _wave.rate);
             //_wave.delay in () for a delay
         }
