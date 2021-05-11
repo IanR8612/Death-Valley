@@ -25,7 +25,10 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Healthbar.SetHealth(Health, MaxHealth);
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (GameObject.FindGameObjectWithTag("Player"))
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
     }
 
     public void TakeDamage(float damage)

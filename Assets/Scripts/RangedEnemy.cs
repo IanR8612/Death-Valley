@@ -39,8 +39,10 @@ public class RangedEnemy : Enemy
             transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
         }*/
         Shoot();
-
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (GameObject.FindGameObjectWithTag("Player"))
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
 
         FlipRanged();
     }

@@ -18,8 +18,10 @@ public class EnemyProjectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-
-        target = (player.transform.position - transform.position).normalized * Speed;
+        if (GameObject.FindGameObjectWithTag("Player"))
+        {
+            target = (player.transform.position - transform.position).normalized * Speed;
+        }
         rb.velocity = new Vector2(target.x, target.y);
     }
 
