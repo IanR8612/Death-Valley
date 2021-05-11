@@ -55,6 +55,7 @@ MonoBehaviour:
   MoveSpeed: 20
   rb: {fileID: 6929247315645159337}
   animator: {fileID: 446161803086127584}
+  spriteRenderer: {fileID: 4949479367539580248}
 --- !u!50 &6929247315645159337
 Rigidbody2D:
   serializedVersion: 4

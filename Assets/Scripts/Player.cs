@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float MoveSpeed = 20f;
     public Rigidbody2D rb;
     public Animator animator;
+    public SpriteRenderer spriteRenderer;
     private Vector2 movement;
     private float health = 5;
     private int killCount = 0;
@@ -66,10 +67,15 @@ public class Player : MonoBehaviour
         if (movement.x != 0 || movement.y != 0)
         {
             animator.SetBool("isMoving", true);
+            if (movement.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
         }
         else
         {
             animator.SetBool("isMoving", false);
+            spriteRenderer.flipX = false;
         }
     }
 
