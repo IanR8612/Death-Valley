@@ -78,7 +78,7 @@ public class WeaponSpawner : MonoBehaviour
             }                
         }
 
-        else if (roundCounter <= 10)
+        else if (roundCounter <= 10 && roundCounter > 5)
         {
             chosenWeapon = MediumWeapons[Random.Range(0, MediumWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)

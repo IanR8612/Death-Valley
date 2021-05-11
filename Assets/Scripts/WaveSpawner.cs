@@ -82,6 +82,11 @@ public class WaveSpawner : MonoBehaviour
         {
             waveCountdown -= Time.deltaTime;
         }
+
+        if (waveCounter == 1)
+        {
+            spawnCheck.text = "1";
+        }
     }
 
     void PickUpWeapon()
@@ -127,7 +132,7 @@ public class WaveSpawner : MonoBehaviour
 
     void EnemyCount(Wave _wave)
     {
-        _wave.count += 2;
+        _wave.count += 1;
     }
 
     bool EnemyIsAlive()
@@ -143,6 +148,7 @@ public class WaveSpawner : MonoBehaviour
                 return false;
             }
         }
+        //spawnCheck.text = "1";
         return true;
     }
 
