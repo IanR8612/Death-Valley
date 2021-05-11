@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6929247315645159337}
   - component: {fileID: 4949479367539580248}
   - component: {fileID: 3236427701521261123}
+  - component: {fileID: 446161803086127584}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -53,6 +54,7 @@ MonoBehaviour:
   WeaponParent: {fileID: 8315230561604286711}
   MoveSpeed: 20
   rb: {fileID: 6929247315645159337}
+  animator: {fileID: 446161803086127584}
 --- !u!50 &6929247315645159337
 Rigidbody2D:
   serializedVersion: 4
@@ -150,6 +152,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7833811, y: 5.8419375}
   m_EdgeRadius: 0
+--- !u!95 &446161803086127584
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2260165516434991753}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93c106f7e8ab61e4a90e387d01659832, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8315230561604286711
 GameObject:
   m_ObjectHideFlags: 0
