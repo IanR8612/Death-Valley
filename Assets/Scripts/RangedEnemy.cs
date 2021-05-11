@@ -4,61 +4,81 @@ using UnityEngine;
 
 public class RangedEnemy : Enemy
 {
-    public GameObject EnemyObject;
 
-    public float Speed;
-    public float StoppingDistance;
-    public float RetreatDistance;
+    //public float StoppingDistance;
+    //public float RetreatDistance;
     public float StartTimeBtwShots;
 
     private float timeBtwShots;
-
-    private Transform player;
     public GameObject EnemyProjectile;
-    private Rigidbody2D rb;
 
     private Animator anim;
+
+    private Transform player;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = this.GetComponent<Rigidbody2D>();
         timeBtwShots = StartTimeBtwShots;
     }
 
     private void Update()
     {
+        /*if (Vector2.Distance(transform.position, player.position) > StoppingDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
+        }
 
+        else if (Vector2.Distance(transform.position, player.position) < StoppingDistance && Vector2.Distance(transform.position, player.position) > RetreatDistance)
+        {
+            transform.position = this.transform.position;
+        }
+
+        else if (Vector2.Distance(transform.position, player.position) < RetreatDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
+        }*/
+        Shoot();
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        FlipRanged();
+    }
+
+    public void Shoot()
+    {
+        if (timeBtwShots <= 0)
+        {
+            Instantiate(EnemyProjectile, transform.position, Quaternion.identity);
+            timeBtwShots = StartTimeBtwShots;
+            animator.SetTrigger("Attack");
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+            animator.ResetTrigger("Attack");
+        }
+    }
+
+    public void FlipRanged()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.z *= -1f;
         if (player != null)
         {
-            /*if (Vector2.Distance(transform.position, player.position) > StoppingDistance)
+            if (transform.position.x > player.position.x && isFlipped)
             {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
+                transform.localScale = flipped;
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = false;
             }
-
-            else if (Vector2.Distance(transform.position, player.position) < StoppingDistance && Vector2.Distance(transform.position, player.position) > RetreatDistance)
+            else if (transform.position.x < player.position.x && !isFlipped)
             {
-                transform.position = this.transform.position;
-            }
-
-            else if (Vector2.Distance(transform.position, player.position) < RetreatDistance)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
-            }*/
-
-
-            if (timeBtwShots <= 0)
-            {
-                Instantiate(EnemyProjectile, transform.position, Quaternion.identity);
-                timeBtwShots = StartTimeBtwShots;
-                anim.SetBool("Attack", true);
-            }
-            else
-            {
-                timeBtwShots -= Time.deltaTime;
-                anim.SetBool("Attack", false);
+                transform.localScale = flipped;
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = true;
             }
         }
     }
+
 }

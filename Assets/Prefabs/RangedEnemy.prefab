@@ -340,14 +340,17 @@ MonoBehaviour:
   animator: {fileID: -8083385944279840620}
   Health: 5
   MaxHealth: 5
+  isFlipped: 0
   Healthbar: {fileID: 4138537946485607332}
-  EnemyObject: {fileID: 2807414285469767329}
-  Speed: 4
-  StoppingDistance: 7
-  RetreatDistance: 5
   StartTimeBtwShots: 1
   EnemyProjectile: {fileID: 8062602826814360393, guid: 251f02b00c47f4edc8aea7a4c1410d4e,
     type: 3}
+  AttackDamage: 1
+  AttackOffset: {x: 0, y: 0, z: 0}
+  AttackRange: 50
+  AttackMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!50 &1636898638338762758
 Rigidbody2D:
   serializedVersion: 4
@@ -367,8 +370,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!114 &4045145707965856602
 MonoBehaviour:
   m_ObjectHideFlags: 0

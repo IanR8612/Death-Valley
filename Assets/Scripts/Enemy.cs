@@ -10,16 +10,22 @@ public class Enemy : MonoBehaviour
     public float Health;
     public float MaxHealth = 5;
 
+    public bool isFlipped = false;
+
     public HealthbarBehavior Healthbar;
+
+    private Transform player;
 
     void Start()
     {
         Health = MaxHealth;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
         Healthbar.SetHealth(Health, MaxHealth);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void TakeDamage(float damage)
@@ -41,5 +47,26 @@ public class Enemy : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false; //disable enemy
         Destroy(gameObject, 1.0f);
+    }
+
+    public void LookAtPlayer()
+    {
+        Vector3 flipped = transform.localScale;
+        flipped.z *= -1f;
+        if (player != null)
+        {
+            if (transform.position.x > player.position.x && isFlipped)
+            {
+                transform.localScale = flipped;
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = false;
+            }
+            else if (transform.position.x < player.position.x && !isFlipped)
+            {
+                transform.localScale = flipped;
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = true;
+            }
+        }
     }
 }
