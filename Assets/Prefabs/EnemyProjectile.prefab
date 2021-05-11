@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4542185532054258693}
   - component: {fileID: 615198339850424834}
   - component: {fileID: 8330885551515136633}
+  - component: {fileID: 261814076218776568}
   m_Layer: 11
   m_Name: EnemyProjectile
   m_TagString: EnemyProjectile
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8062602826814360393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.65, y: 0.4, z: 0}
-  m_LocalScale: {x: 0.085184224, y: 0.085184224, z: 0.085184224}
+  m_LocalScale: {x: 0.4349772, y: 0.4349772, z: 0.4349772}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -101,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: 704323521
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 315695a8fcac3874d8546611e6ec8ba1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b71410109cadd4d55b4c88fe6270c6e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -125,9 +126,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08048521, y: 0.16097042}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 1.5049479
 --- !u!50 &8330885551515136633
 Rigidbody2D:
   serializedVersion: 4
@@ -149,3 +150,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &261814076218776568
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8062602826814360393}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c080d897dde894f73aad57968578b143, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

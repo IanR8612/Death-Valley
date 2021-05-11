@@ -14,7 +14,7 @@ public class RangedEnemy : Enemy
 
     private Animator anim;
 
-    private Transform player;
+    private Transform Player;
 
     private void Start()
     {
@@ -41,7 +41,7 @@ public class RangedEnemy : Enemy
         Shoot();
         if (GameObject.FindGameObjectWithTag("Player"))
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            Player = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         FlipRanged();
@@ -66,15 +66,15 @@ public class RangedEnemy : Enemy
     {
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
-        if (player != null)
+        if (Player != null)
         {
-            if (transform.position.x > player.position.x && isFlipped)
+            if (transform.position.x > Player.position.x && isFlipped)
             {
                 transform.localScale = flipped;
                 transform.Rotate(0f, 180f, 0f);
                 isFlipped = false;
             }
-            else if (transform.position.x < player.position.x && !isFlipped)
+            else if (transform.position.x < Player.position.x && !isFlipped)
             {
                 transform.localScale = flipped;
                 transform.Rotate(0f, 180f, 0f);
