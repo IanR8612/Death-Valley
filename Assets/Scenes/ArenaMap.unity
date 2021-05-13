@@ -46319,6 +46319,12 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
+        type: 3}
+      propertyPath: WeaponSlotOnePrefab
+      value: 
+      objectReference: {fileID: 3940961069569372636, guid: 44c76ca2c9e4ced46852d65189dabb4e,
+        type: 3}
     - target: {fileID: 2260165516434991753, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
         type: 3}
       propertyPath: m_Name

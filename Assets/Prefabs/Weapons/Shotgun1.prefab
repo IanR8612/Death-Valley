@@ -50,7 +50,7 @@ MonoBehaviour:
   Projectile: {fileID: 8062602826814360393, guid: b97a153ef2bcecb4c9538aaca6acf44a,
     type: 3}
   ProjectileSpawnLocation: {fileID: 5970870135146149587}
-  FireRate: 0.9
+  FireRate: 1.1
   ProjectileSpeed: 2200
   RandomSpeedMultiplier: 0.1
   Spread: 9
@@ -66,7 +66,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000000014901161, y: -0.016365826}
