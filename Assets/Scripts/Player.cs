@@ -20,9 +20,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        if (health == 0)
-            Die();
+        //health -= damage;
+        //if (health == 0)
+        //    Die();
     }
 
     public void AddToKillCount()
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
         weaponSlotOne.transform.Rotate(0, -90, 0);
     }
 
-    private void Die()
+    public void Die()
     {
         Destroy(this.gameObject);
     }

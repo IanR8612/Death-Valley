@@ -36,10 +36,10 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            player.GetComponent<Player>().TakeDamage(damage);
+            player.GetComponent<PlayerHealth>().TakeDamage(damage);
             anim.SetTrigger("Explode");
             Destroy(this.gameObject, 0.45f);
-            Debug.Log(player.GetComponent<Player>().ShowHealth());
+            //Debug.Log(player.GetComponent<Player>().ShowHealth());
         }
 
         Physics2D.IgnoreLayerCollision(10, 11);

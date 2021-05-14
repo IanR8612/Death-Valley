@@ -30,16 +30,6 @@ public class FillStatusBar : MonoBehaviour
 
         float fillValue = playerHealth.currentHealth / playerHealth.maxHealth;
 
-        if(fillValue <= slider.maxValue / 3)
-        {
-            fillImage.color = Color.white;
-        }
-        else if (fillValue > slider.maxValue / 3)
-        {
-            fillImage.color = Color.red;
-        }
-
-
         slider.value = fillValue; 
     }
 }

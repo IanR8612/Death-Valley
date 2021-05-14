@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeEnemy : Enemy
 {
 
-    public float AttackDamage = 1f;
+    public float AttackDamage = 1;
 
     public Vector3 AttackOffset;
     public float AttackRange = 1f;
@@ -21,7 +21,7 @@ public class MeleeEnemy : Enemy
 
         if(colInfo != null)
         {
-            colInfo.GetComponent<Player>().TakeDamage(AttackDamage);
+            colInfo.GetComponent<PlayerHealth>().TakeDamage(AttackDamage);
         }
     }
 

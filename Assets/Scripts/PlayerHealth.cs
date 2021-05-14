@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int currentHealth;
+    public float maxHealth = 10;
+    public float currentHealth = 10;
+    public Player playerToDie;
 
     // public Animator anim;
 
@@ -15,18 +16,17 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         currentHealth -= amount;
 
-        //if(currentHealth <= 0)
-        //{
-        //    // Dead
-
-        //}
+        if (currentHealth == 0)
+        {
+            playerToDie.Die();
+        }
     }
 
-    void Heal(int amount)
+    public void Heal(float amount)
     {
         currentHealth += amount;
 
