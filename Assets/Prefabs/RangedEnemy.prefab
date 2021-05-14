@@ -345,12 +345,6 @@ MonoBehaviour:
   StartTimeBtwShots: 1
   EnemyProjectile: {fileID: 8062602826814360393, guid: 251f02b00c47f4edc8aea7a4c1410d4e,
     type: 3}
-  AttackDamage: 1
-  AttackOffset: {x: 0, y: 0, z: 0}
-  AttackRange: 50
-  AttackMask:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!50 &1636898638338762758
 Rigidbody2D:
   serializedVersion: 4
@@ -417,7 +411,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 1.2
-  endReachedDistance: 0.2
+  endReachedDistance: 4.5
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
