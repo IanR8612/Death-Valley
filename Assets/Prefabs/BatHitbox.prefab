@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8069757264726265573}
   - component: {fileID: 8250830784496960671}
   - component: {fileID: 3658899929260274306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BatHitbox
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
