@@ -42,8 +42,8 @@ public class Weapon : MonoBehaviour
             GameObject newProjectile = Instantiate(Projectile, ProjectileSpawnLocation.transform.position, this.gameObject.transform.rotation);
             newProjectile.GetComponent<Projectile>().SetDamage(Damage);
             newProjectile.GetComponent<Projectile>().SetTeam(PlayerObject.gameObject.tag);
-            newProjectile.transform.Rotate(new Vector3(0, 0, randomRotation));
-            newProjectile.GetComponent<Rigidbody2D>().AddForce(newProjectile.transform.right * (ProjectileSpeed * randomSpeedMultiplier));
+            newProjectile.transform.Rotate(new Vector3(0, 0, randomRotation - 90));
+            newProjectile.GetComponent<Rigidbody2D>().AddForce(newProjectile.transform.up * (ProjectileSpeed * randomSpeedMultiplier));
         }
         canFire = false;
         StartCoroutine(Cooldown());

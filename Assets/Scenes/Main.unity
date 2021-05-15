@@ -48214,7 +48214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: WeaponSlotOnePrefab
       value: 
-      objectReference: {fileID: 2043328325234751147, guid: e2a4ac8d7316e304dad00410283d46a4,
+      objectReference: {fileID: 2556972791367190295, guid: 855ac4df2bbaffe4b87291e76919976f,
         type: 3}
     - target: {fileID: 2260165516434991753, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
         type: 3}
