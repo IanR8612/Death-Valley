@@ -46,8 +46,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        InitializeWeapons();
         FindCamera();
+        InitializeWeapons();
     }
 
     private void Update()
@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
 
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
     {
-        GameObject newWeapon = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity, this.gameObject.transform);
+        GameObject newWeapon = Instantiate(prefab, WeaponParent.transform.position, Quaternion.identity, this.gameObject.transform);
         newWeapon.transform.SetParent(WeaponParent.transform);
         newWeapon.transform.Rotate(new Vector3(0, 0, -90));
         Weapon weaponScript = (Weapon)newWeapon.GetComponent(typeof(Weapon));
