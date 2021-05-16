@@ -48887,17 +48887,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
         type: 3}
-      propertyPath: Camera
-      value: 
-      objectReference: {fileID: 519420031}
-    - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
-        type: 3}
-      propertyPath: WeaponSlotOnePrefab
-      value: 
-      objectReference: {fileID: 2556972791367190295, guid: 855ac4df2bbaffe4b87291e76919976f,
-        type: 3}
-    - target: {fileID: 2260165516434991752, guid: 09eb3a8a8e1871e41bb6ad77d8b311ae,
-        type: 3}
       propertyPath: respawnScript
       value: 
       objectReference: {fileID: 520874876}

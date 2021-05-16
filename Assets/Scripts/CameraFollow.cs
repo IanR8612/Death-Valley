@@ -17,6 +17,11 @@ public class CameraFollow : MonoBehaviour
     private float cameraHalfWidth;
     private float cameraHalfHeight;
 
+    public void NewFollowTransform(Transform transform)
+    {
+        FollowTransform = transform;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +34,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (FollowTransform == null)
         {
-            Destroy(this);
+            //Destroy(this);
             return;
         }
         

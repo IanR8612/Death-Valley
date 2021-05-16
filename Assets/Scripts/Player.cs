@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         InitializeWeapons();
+        FindCamera();
     }
 
     private void Update()
@@ -94,6 +95,12 @@ public class Player : MonoBehaviour
     private void InitializeWeapons()
     {
         weaponSlotOne = InstantiateWeaponPrefab(WeaponSlotOnePrefab);
+    }
+
+    private void FindCamera()
+    {
+        Camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>(); // this line isn't working
+        Camera.GetComponent<CameraFollow>().NewFollowTransform(this.gameObject.transform);
     }
 
     private GameObject InstantiateWeaponPrefab(GameObject prefab)
