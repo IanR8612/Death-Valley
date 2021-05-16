@@ -35,6 +35,8 @@ public class WaveSpawner : MonoBehaviour
     public Text spawnCheck;
     public Text waveCount;
 
+    public Text playerRespawn;
+
     void Start()
     {
         if (spawnPoints.Length == 0)
@@ -47,6 +49,11 @@ public class WaveSpawner : MonoBehaviour
 
     void Update()
     {
+        if (playerRespawn.text == "reset")
+        {
+            StartGame();
+        }
+
         if (state == SpawnState.WAITING)
         {            
             if (!EnemyIsAlive())
@@ -72,7 +79,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (state != SpawnState.SPAWNING)
                 {
-                    waveCounter += 1;
+                    waveCounter += 1;                    
                     StartCoroutine(SpawnWave(waves[nextWave]));                    
                     waveCount.text = "Wave: " + waveCounter.ToString();
                 }
@@ -87,6 +94,13 @@ public class WaveSpawner : MonoBehaviour
         {
             spawnCheck.text = "1";
         }
+    }
+
+    void StartGame()
+    {
+        ResetWave(waves[nextWave]);
+        playerRespawn.text = "game on";
+        StartCoroutine(SpawnWave(waves[nextWave]));
     }
 
     void PickUpWeapon()
@@ -123,6 +137,12 @@ public class WaveSpawner : MonoBehaviour
         {
             nextWave++;
         }
+    }
+
+    void ResetWave(Wave _wave)
+    {
+        _wave.count = 1;
+        _wave.rate = 0.1f;
     }
 
     void EnemyRate(Wave _wave)
