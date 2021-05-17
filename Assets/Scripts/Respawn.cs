@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Respawn : MonoBehaviour
     public Transform playerSpawnPoint;
 
     public CanvasGroup restartMenu;
+    public CanvasGroup MainMenu;
+    public CanvasGroup Leaderboard;
 
     float countdownSearch = 1f;
 
@@ -33,10 +36,13 @@ public class Respawn : MonoBehaviour
     public void RespawnPlayer()
     {
         playerRespawn.text = "reset";
-        Hide(restartMenu);
+        Hide(restartMenu);        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Hide(MainMenu);
+        Hide(Leaderboard);
         Time.timeScale = 1;
-        Debug.Log("Player respawned.");
-        Instantiate(playerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
+        //Debug.Log("Player respawned.");
+        //Instantiate(playerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
     }
 
     bool PlayerIsAlive()
