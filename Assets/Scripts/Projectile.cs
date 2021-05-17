@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public bool canPenetrate = false;
     private float damage;
 
     public void SetDamage(float newDamage)
@@ -42,7 +43,10 @@ public class Projectile : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             other.GetComponent<Enemy>().TakeDamage(damage);
-            Destroy(this.gameObject);
+            if (!canPenetrate)
+            {
+                Destroy(this.gameObject);
+            }
         }
         if (other.gameObject.tag == "EnemyProjectile")
         {
