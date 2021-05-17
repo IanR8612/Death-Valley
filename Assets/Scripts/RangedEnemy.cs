@@ -24,20 +24,6 @@ public class RangedEnemy : Enemy
 
     private void Update()
     {
-        /*if (Vector2.Distance(transform.position, player.position) > StoppingDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, Speed * Time.deltaTime);
-        }
-
-        else if (Vector2.Distance(transform.position, player.position) < StoppingDistance && Vector2.Distance(transform.position, player.position) > RetreatDistance)
-        {
-            transform.position = this.transform.position;
-        }
-
-        else if (Vector2.Distance(transform.position, player.position) < RetreatDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -Speed * Time.deltaTime);
-        }*/
         Shoot();
         if (GameObject.FindGameObjectWithTag("Player"))
         {

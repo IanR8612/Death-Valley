@@ -8,21 +8,21 @@ public class ExplosiveEnemy : Enemy
     public float AttackDamage = 1;
 
     public Vector3 AttackOffset;
-    public float AttackRange = 1f;
+    public float GizmoRange = 1f;
     public LayerMask AttackMask;
 
-    public void Attack()
+    public void Explode()
     {
         Vector3 pos = transform.position;
         pos += transform.right * AttackOffset.x;
         pos += transform.up * AttackOffset.y;
 
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, AttackRange, AttackMask);
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, GizmoRange, AttackMask);
 
         if(colInfo != null)
         {
             colInfo.GetComponent<PlayerHealth>().TakeDamage(AttackDamage);
-            Destroy(gameObject, 0.6f);
+            Destroy(gameObject, 0.2f);
         }
     }
 
@@ -32,6 +32,6 @@ public class ExplosiveEnemy : Enemy
         pos += transform.right * AttackOffset.x;
         pos += transform.up * AttackOffset.y;
 
-        Gizmos.DrawWireSphere(pos, AttackRange);
+        Gizmos.DrawWireSphere(pos, GizmoRange);
     }
 }

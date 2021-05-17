@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: 770ee6fa9a9e0403e831b3b1b69ee223
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5700693311570756395
+    second: SkeletonBombBOIpng_0
+  - first:
+      213: 4006643060463032324
+    second: SkeletonBombBOIpng_1
+  - first:
+      213: -7240353312865150333
+    second: SkeletonBombBOIpng_2
+  - first:
+      213: -4798068794261395291
+    second: SkeletonBombBOIpng_3
+  - first:
+      213: -1139207701461884978
+    second: SkeletonBombBOIpng_4
+  - first:
+      213: -4198965089216194336
+    second: SkeletonBombBOIpng_5
+  - first:
+      213: -1034988644635103442
+    second: SkeletonBombBOIpng_6
+  - first:
+      213: 2732685753196870040
+    second: SkeletonBombBOIpng_7
+  - first:
+      213: -3700281362028702325
+    second: SkeletonBombBOIpng_8
+  - first:
+      213: 8573960811783924720
+    second: SkeletonBombBOIpng_9
+  - first:
+      213: -382023589198323591
+    second: ExplodeSkeletonBombBOIpng0
+  - first:
+      213: 9099905469435464895
+    second: ExplodeSkeletonBombBOIpng1
+  - first:
+      213: 7365555599368893313
+    second: ExplodeSkeletonBombBOIpng2
+  - first:
+      213: 1415314055229386671
+    second: ExplodeSkeletonBombBOIpng3
+  - first:
+      213: -6610608023653798147
+    second: ExplodeSkeletonBombBOIpng4
+  - first:
+      213: -4001332060012081326
+    second: ExplodeSkeletonBombBOIpng5
+  - first:
+      213: -8347439733285952538
+    second: ExplodeSkeletonBombBOIpng6
+  - first:
+      213: -7082488324650940130
+    second: ExplodeSkeletonBombBOIpng7
+  - first:
+      213: -781074232356925865
+    second: ExplodeSkeletonBombBOIpng8
+  - first:
+      213: -8591258444877952564
+    second: ExplodeSkeletonBombBOIpng9
+  - first:
+      213: 8998398271387203141
+    second: ExplodeSkeletonBombBOIpng10
+  - first:
+      213: 5158180596930148679
+    second: ExplodeSkeletonBombBOIpng11
+  - first:
+      213: -5381178917238349889
+    second: ExplodeSkeletonBombBOIpng12
+  - first:
+      213: -147728933158378736
+    second: SkeletonBombBOIpng_23
+  - first:
+      213: -4290362542713724980
+    second: SkeletonBombBOIpng_24
+  - first:
+      213: -3405130634461948616
+    second: SkeletonBombBOIpng_25
+  - first:
+      213: 6054157709655160349
+    second: SkeletonBombBOIpng_26
+  - first:
+      213: -3493497240843712058
+    second: SkeletonBombBOIpng_27
+  - first:
+      213: -5541037930621310959
+    second: SkeletonBombBOIpng_28
+  - first:
+      213: -1456737980513256000
+    second: SkeletonBombBOIpng_29
+  - first:
+      213: -3263717694740310818
+    second: WalkSkeletonBombBOIpng0
+  - first:
+      213: -1730423227669639131
+    second: WalkSkeletonBombBOIpng1
+  - first:
+      213: -3560951676587557262
+    second: SkeletonBombBOIpng_32
+  - first:
+      213: 8306419632410430882
+    second: WalkSkeletonBombBOIpng2
+  - first:
+      213: -8783019700032665893
+    second: WalkSkeletonBombBOIpng3
+  - first:
+      213: 1277064413609850647
+    second: WalkSkeletonBombBOIpng4
+  - first:
+      213: -1778320920843447092
+    second: WalkSkeletonBombBOIpng5
+  - first:
+      213: -1929087127428889014
+    second: SkeletonBombBOIpng_37
+  - first:
+      213: -1777718565458613303
+    second: FlinchSkeletonBombBOIpng0
+  - first:
+      213: 4793955998747557946
+    second: FlinchSkeletonBombBOIpng1
+  - first:
+      213: 921718608893587584
+    second: FlinchSkeletonBombBOIpng2
+  - first:
+      213: -6372240655649274029
+    second: FlinchSkeletonBombBOIpng3
+  - first:
+      213: 259189724473424963
+    second: FlinchSkeletonBombBOIpng4
+  - first:
+      213: -7733789311301246699
+    second: DeathSkeletonBombBOIpng0
+  - first:
+      213: 2240328437820359567
+    second: DeathSkeletonBombBOIpng1
+  - first:
+      213: -6574081505083844052
+    second: DeathSkeletonBombBOIpng2
+  - first:
+      213: 3886091871886217487
+    second: SkeletonBombBOIpng_46
+  - first:
+      213: 2325402154137990253
+    second: SkeletonBombBOIpng_47
+  - first:
+      213: -5045344397654276814
+    second: DeathSkeletonBombBOIpng3
+  - first:
+      213: 7407545661540282183
+    second: DeathSkeletonBombBOIpng4
+  - first:
+      213: -3787680218349402594
+    second: DeathSkeletonBombBOIpng5
+  - first:
+      213: -7454449235084786337
+    second: DeathSkeletonBombBOIpng6
+  - first:
+      213: -4589930270134428880
+    second: DeathSkeletonBombBOIpng7
+  - first:
+      213: -2507831898959514227
+    second: SkeletonBombBOIpng_53
+  - first:
+      213: 6202777131544562606
+    second: SkeletonBombBOIpng_54
+  - first:
+      213: 7068763176477407493
+    second: SkeletonBombBOIpng_55
+  - first:
+      213: 8737861588452661189
+    second: SkeletonBombBOIpng_56
+  - first:
+      213: 3644937873065060072
+    second: DeathSkeletonBombBOIpng8
+  - first:
+      213: 8705928930444027588
+    second: DeathSkeletonBombBOIpng9
+  - first:
+      213: -1842443382249343180
+    second: DeathSkeletonBombBOIpng10
+  - first:
+      213: -4394069370639869722
+    second: DeathSkeletonBombBOIpng11
+  - first:
+      213: -5966538742684570396
+    second: DeathSkeletonBombBOIpng12
+  - first:
+      213: -6192441154649739074
+    second: SkeletonBombBOIpng_62
+  - first:
+      213: -2847355457262982405
+    second: SkeletonBombBOIpng_63
+  - first:
+      213: -1911623275488363379
+    second: SkeletonBombBOIpng_64
+  - first:
+      213: 7868494924391341902
+    second: SkeletonBombBOIpng_65
+  - first:
+      213: 5269983840340397070
+    second: SkeletonBombBOIpng_66
+  - first:
+      213: -5190827791682473102
+    second: SkeletonBombBOIpng_67
+  - first:
+      213: 2685143072726632428
+    second: SkeletonBombBOIpng_68
+  - first:
+      213: 4575390707772701282
+    second: SkeletonBombBOIpng_69
+  - first:
+      213: -6474200467760851444
+    second: SkeletonBombBOIpng_70
+  - first:
+      213: -5170366272740898945
+    second: SkeletonBombBOIpng_71
+  - first:
+      213: -2623355522475059390
+    second: SkeletonBombBOIpng_72
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonBombBOIpng_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2089
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408dea8a2a47a9730800000000000000
+      internalID: 4006643060463032324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonBombBOIpng_8
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 2077
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85d747c4b5f5acc0800000000000000
+      internalID: -3700281362028702325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1486
+        width: 204
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970a306d197c2baf0800000000000000
+      internalID: -382023589198323591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng1
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1486
+        width: 195
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcc553afcb594e70800000000000000
+      internalID: 9099905469435464895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng2
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1491
+        width: 216
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183b5c11bc5b73660800000000000000
+      internalID: 7365555599368893313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng3
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1486
+        width: 221
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafa09372a434a310800000000000000
+      internalID: 1415314055229386671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng4
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 1486
+        width: 216
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfea4c8e6076244a0800000000000000
+      internalID: -6610608023653798147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng5
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 1486
+        width: 195
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f099ef0b96878c0800000000000000
+      internalID: -4001332060012081326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng6
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 1486
+        width: 256
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e362890acfe72c80800000000000000
+      internalID: -8347439733285952538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng7
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1486
+        width: 274
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e194453b462f5bd90800000000000000
+      internalID: -7082488324650940130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng8
+      rect:
+        serializedVersion: 2
+        x: 3979
+        y: 1482
+        width: 274
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e872dbf111925f0800000000000000
+      internalID: -781074232356925865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng9
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 1486
+        width: 244
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9897b76f7b5c880800000000000000
+      internalID: -8591258444877952564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng10
+      rect:
+        serializedVersion: 2
+        x: 4927
+        y: 1488
+        width: 234
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546f5816d8bb0ec70800000000000000
+      internalID: 8998398271387203141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng11
+      rect:
+        serializedVersion: 2
+        x: 5409
+        y: 1431
+        width: 273
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74975577ce9859740800000000000000
+      internalID: 5158180596930148679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplodeSkeletonBombBOIpng12
+      rect:
+        serializedVersion: 2
+        x: 5794
+        y: 1365
+        width: 435
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfdf2519463255b0800000000000000
+      internalID: -5381178917238349889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonBombBOIpng_25
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 1727
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8355817aabb8eb0d0800000000000000
+      internalID: -3405130634461948616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonBombBOIpng_28
+      rect:
+        serializedVersion: 2
+        x: 3678
+        y: 1468
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118e95a1c574a13b0800000000000000
+      internalID: -5541037930621310959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonBombBOIpng_29
+      rect:
+        serializedVersion: 2
+        x: 4129
+        y: 1477
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdffac5680a8cbe0800000000000000
+      internalID: -1456737980513256000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1008
+        width: 204
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4d8dd6c02f4b2d0800000000000000
+      internalID: -3263717694740310818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng1
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1002
+        width: 195
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5209aab1e3d4cf7e0800000000000000
+      internalID: -1730423227669639131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng2
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 1012
+        width: 182
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad872975a4564370800000000000000
+      internalID: 8306419632410430882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng3
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1008
+        width: 213
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd68b440e127c1680800000000000000
+      internalID: -8783019700032665893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng4
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 1008
+        width: 226
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717f188615b09b110800000000000000
+      internalID: 1277064413609850647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkSkeletonBombBOIpng5
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 1008
+        width: 208
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc41b706b822257e0800000000000000
+      internalID: -1778320920843447092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlinchSkeletonBombBOIpng0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 527
+        width: 174
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbe83b22664457e0800000000000000
+      internalID: -1777718565458613303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlinchSkeletonBombBOIpng1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 527
+        width: 155
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a308336d49d878240800000000000000
+      internalID: 4793955998747557946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlinchSkeletonBombBOIpng2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 527
+        width: 161
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08038f9f03a9acc00800000000000000
+      internalID: 921718608893587584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlinchSkeletonBombBOIpng3
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 527
+        width: 165
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35709b0a2e04197a0800000000000000
+      internalID: -6372240655649274029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlinchSkeletonBombBOIpng4
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 521
+        width: 204
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c7ba06ea3d89300800000000000000
+      internalID: 259189724473424963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 67
+        width: 204
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5112d24c89f0ca490800000000000000
+      internalID: -7733789311301246699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 51
+        width: 242
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f830d7c28de371f10800000000000000
+      internalID: 2240328437820359567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng2
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 48
+        width: 285
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a130db3bb24c4a0800000000000000
+      internalID: -6574081505083844052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng3
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 51
+        width: 272
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2354f4070065bf9b0800000000000000
+      internalID: -5045344397654276814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng4
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 49
+        width: 165
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f28954883ecc660800000000000000
+      internalID: 7407545661540282183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng5
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 38
+        width: 234
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16828ec8e47f6bc0800000000000000
+      internalID: -3787680218349402594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng6
+      rect:
+        serializedVersion: 2
+        x: 2922
+        y: 49
+        width: 174
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55c6928ae97c8890800000000000000
+      internalID: -7454449235084786337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng7
+      rect:
+        serializedVersion: 2
+        x: 3420
+        y: 49
+        width: 174
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b13d0ecba4d40c0800000000000000
+      internalID: -4589930270134428880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng8
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 37
+        width: 173
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e629601fab659230800000000000000
+      internalID: 3644937873065060072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng9
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 49
+        width: 165
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6a9ea7c3ca1d870800000000000000
+      internalID: 8705928930444027588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng10
+      rect:
+        serializedVersion: 2
+        x: 4848
+        y: 49
+        width: 173
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437324a61835e66e0800000000000000
+      internalID: -1842443382249343180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng11
+      rect:
+        serializedVersion: 2
+        x: 5329
+        y: 49
+        width: 174
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8169c20312503c0800000000000000
+      internalID: -4394069370639869722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathSkeletonBombBOIpng12
+      rect:
+        serializedVersion: 2
+        x: 5797
+        y: 49
+        width: 174
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec2ea720a8923da0800000000000000
+      internalID: -5966538742684570396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
