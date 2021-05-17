@@ -83,7 +83,7 @@ MonoBehaviour:
   FireRate: 0.1
   ProjectileSpeed: 2500
   RandomSpeedMultiplier: 0
-  Spread: 3
+  Spread: 5
   ProjectilesPerShot: 1
   Damage: 1
 --- !u!61 &1156438649120965559

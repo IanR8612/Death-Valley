@@ -80,10 +80,10 @@ MonoBehaviour:
   Projectile: {fileID: 8062602826814360393, guid: b97a153ef2bcecb4c9538aaca6acf44a,
     type: 3}
   ProjectileSpawnLocation: {fileID: 3458541369030503837}
-  FireRate: 0.05
+  FireRate: 0.07
   ProjectileSpeed: 2500
   RandomSpeedMultiplier: 0
-  Spread: 2
+  Spread: 1
   ProjectilesPerShot: 1
   Damage: 1
 --- !u!61 &2057998703568406423
