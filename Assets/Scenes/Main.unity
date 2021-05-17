@@ -47095,6 +47095,8 @@ MonoBehaviour:
     enemy: {fileID: 4614905703362632406, guid: 9c26ff099da954e628f8eafbc8da054f, type: 3}
     enemyRange: {fileID: 3227421730158635929, guid: e4bb7042b626c463ab8531c748b97169,
       type: 3}
+    enemyExplosive: {fileID: 4614905703362632406, guid: 3671ea87f68ea432f840d089534a81c4,
+      type: 3}
     count: 1
     rate: 1
   spawnPoints:

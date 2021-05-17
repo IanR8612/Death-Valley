@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public enum SpawnState { SPAWNING, WAITING, COUNTING};
+    public enum SpawnState { SPAWNING, WAITING, COUNTING };
 
     [System.Serializable]
     public class Wave
@@ -13,6 +13,7 @@ public class WaveSpawner : MonoBehaviour
         public string name;
         public Transform enemy;
         public Transform enemyRange;
+        public Transform enemyExplosive;
         public int count;
         public float rate;
     }
@@ -37,6 +38,8 @@ public class WaveSpawner : MonoBehaviour
 
     public Text playerRespawn;
 
+    private List<Transform> enemiesToRemove = new List<Transform>();
+
     void Start()
     {
         if (spawnPoints.Length == 0)
@@ -49,8 +52,15 @@ public class WaveSpawner : MonoBehaviour
 
     void Update()
     {
-        if (playerRespawn.text == "reset")
+        if (playerRespawn.text == "reset" && waveCountdown <= 0)
         {
+            foreach (Transform enemy in enemiesToRemove)
+            {
+                enemiesToRemove.Remove(enemy);
+                Transform.Destroy(enemy);
+            }
+            //enemiesToRemove.Clear();
+            //waveCountdown = 5f;
             StartGame();
         }
 
@@ -97,10 +107,16 @@ public class WaveSpawner : MonoBehaviour
     }
 
     void StartGame()
-    {
-        ResetWave(waves[nextWave]);
-        playerRespawn.text = "game on";
-        StartCoroutine(SpawnWave(waves[nextWave]));
+    {        
+        waveCounter = 1;
+        ResetWave(waves[nextWave]);        
+        if (!EnemyIsAlive())
+        {
+            playerRespawn.text = "game on";
+            waveCount.text = "Wave: " + waveCounter.ToString();
+            StartCoroutine(SpawnWave(waves[nextWave]));
+        }
+        //StartCoroutine(SpawnWave(waves[nextWave]));        
     }
 
     void PickUpWeapon()
@@ -142,7 +158,7 @@ public class WaveSpawner : MonoBehaviour
     void ResetWave(Wave _wave)
     {
         _wave.count = 1;
-        _wave.rate = 0.1f;
+        _wave.rate = 1f;
     }
 
     void EnemyRate(Wave _wave)
@@ -180,6 +196,7 @@ public class WaveSpawner : MonoBehaviour
         {
             SpawnEnemy(_wave.enemy);         
             SpawnEnemy(_wave.enemyRange);
+            SpawnEnemy(_wave.enemyExplosive);
             yield return new WaitForSeconds(1f / _wave.rate);
             //_wave.delay in () for a delay
         }
@@ -192,6 +209,7 @@ public class WaveSpawner : MonoBehaviour
     void SpawnEnemy(Transform _enemy)
     {
         Debug.Log("Spawning Enemy: " + _enemy.name);
+        enemiesToRemove.Add(_enemy);
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
         Instantiate(_enemy, _sp.position, _sp.rotation);
     }
