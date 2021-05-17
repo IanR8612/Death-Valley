@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddToKillCount();
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false; //disable enemy
-        Destroy(gameObject, 1.0f);
+        Destroy(gameObject, 0.6f);
     }
 
     public void LookAtPlayer()
