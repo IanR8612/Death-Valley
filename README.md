@@ -54,7 +54,9 @@ f. This is my own work, and I did not cheat on this assignment.
 
 2.) List of source files submitted  
 a. Enemy.cs  
+
 b. ExplosiveEnemy.cs
+
 b. ExplosiveAnimation.cs
 
 3.) Description of any known compile/runtime errors, or bugs  
