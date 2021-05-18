@@ -122,7 +122,7 @@ public class WaveSpawner : MonoBehaviour
     void PickUpWeapon()
     {               
         waveCountdown = timeBetweenWaves;
-        if (GameObject.FindGameObjectsWithTag("Weapon").Length == 1)
+        if (GameObject.FindGameObjectsWithTag("Weapon").Length == 1 && state == SpawnState.WAITING)
         {
             WaveCompleted();
         }

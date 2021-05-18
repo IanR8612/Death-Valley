@@ -29,6 +29,8 @@ public class WeaponSpawner : MonoBehaviour
     public int roundCounter = 0;
     private int gunCount = 1;
 
+    private int spawn; //0, no spawn   1, spawn
+
     //private float searchTime = 4f;
 
     public Text gunSpawn;
@@ -70,7 +72,7 @@ public class WeaponSpawner : MonoBehaviour
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
                 //Invoke("SpawnWeakWeapon(chosenWeapon)", 1);
-                if (spawnCheck.text == "1")
+                if (spawnCheck.text == "1" && spawn == 1)
                 {
                     SpawnWeakWeapon(chosenWeapon);
                     gunCount = 2;
@@ -83,7 +85,7 @@ public class WeaponSpawner : MonoBehaviour
             chosenWeapon = MediumWeapons[Random.Range(0, MediumWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
-                if (spawnCheck.text == "1")
+                if (spawnCheck.text == "1" && spawn == 1)
                 {
                     SpawnMedWeapon(chosenWeapon);
                     gunCount = 2;
@@ -96,7 +98,7 @@ public class WeaponSpawner : MonoBehaviour
             chosenWeapon = StrongWeapons[Random.Range(0, StrongWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
-                if (spawnCheck.text == "1")
+                if (spawnCheck.text == "1" && spawn == 1)
                 {
                     SpawnStrongWeapon(chosenWeapon);
                     gunCount = 2;
@@ -107,26 +109,38 @@ public class WeaponSpawner : MonoBehaviour
 
     void SpawnWeakWeapon(Transform _weapon)
     {
-        //Transform _wpType = WeakWeapons[Random.Range(0, WeakWeapons.Length)];        
-        Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        //gunSpawn.text = "despawn";
-        roundCounter += 1;
-        //searchTime = 4f;
-        spawnCheck.text = "0";
+        if (spawn == 1)
+        {
+            spawn = 0;
+            //Transform _wpType = WeakWeapons[Random.Range(0, WeakWeapons.Length)];        
+            Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
+            //gunSpawn.text = "despawn";
+            roundCounter += 1;
+            //searchTime = 4f;
+            spawnCheck.text = "0";
+        }        
     }
     void SpawnMedWeapon(Transform _weapon)
     {
-        Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        //gunSpawn.text = "despawn";
-        roundCounter += 1;
-        spawnCheck.text = "0";
+        if (spawn == 1)
+        {
+            spawn = 0;
+            Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
+            //gunSpawn.text = "despawn";
+            roundCounter += 1;
+            spawnCheck.text = "0";
+        }
     }
     void SpawnStrongWeapon(Transform _weapon)
     {
-        Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
-        //gunSpawn.text = "despawn";
-        roundCounter += 1;
-        spawnCheck.text = "0";
+        if (spawn == 1)
+        {
+            spawn = 0;
+            Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
+            //gunSpawn.text = "despawn";
+            roundCounter += 1;
+            spawnCheck.text = "0";
+        }
     }
 
     bool EnemyIsAlive()
@@ -139,7 +153,11 @@ public class WeaponSpawner : MonoBehaviour
             {
                 return false;
             }
-        }
+            else
+            {
+                spawn = 1;
+            }
+        }        
         return true;
     }
 }
