@@ -1,11 +1,11 @@
 # Death-Valley
 Repository for the Unity final project for LD1:
 
+Group Members: Dominic Castaneda, Nathan Cuadros, Sevan Levonian, Jaewon Park, Ian Reafsnyder 
+
 You are a competitor in an arena. You will face waves upon waves of enemies
 that will try their hardest to kill you. You found yourself here because there
-was nowhere else to turn.
-
-Your goal is to make it to the highest wave that you can.
+was nowhere else to turn. Your goal is to make it to the highest wave that you can.
 
 Use WASD to move. Use the mouse to aim your weapon. Hold down the left mouse
 button to fire your weapon.
@@ -18,9 +18,7 @@ have colored marks on them. Green weapons are better than stock weapons, and
 blue weapons are better than green.
 
 When enemies die, they will sometimes drop a health pack. Simply walk onto it
-to use it. You'll need it.
-
-When you die, press restart to try again.
+to use it. You'll need it. When you die, press restart to try again.
 
 Oh, and you WILL die.
 
