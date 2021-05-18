@@ -39,11 +39,17 @@ For that final I added:
 -A particle system
 
 1.) Identifying Information  
+
 a. Full Name: Dominic Castaneda 
+
 b. Student ID: 2339062 
+
 c. Chapman email: dcastaneda@chapman.edu 
+
 d. Course number and section: CPSC245-01 
+
 e. Assignment Number: Final  
+
 f. This is my own work, and I did not cheat on this assignment.
 
 2.) List of source files submitted  
