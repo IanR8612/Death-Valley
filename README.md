@@ -27,7 +27,9 @@ Oh, and you WILL die.
 A lot.
 
 Coding standards for Dominic Castaneda's added functionality for his Unity Programming Final:
+
 Part of my CSPC245 final was adding extra functionality to a unity game. 
+
 For that final I added:
 
 -A* pathfinding
