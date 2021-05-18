@@ -8,7 +8,7 @@ public class ExplosiveEnemy : Enemy
     public float AttackDamage = 1;
 
     public Vector3 AttackOffset;
-    public float GizmoRange = 1f;
+    public float GizmoRange = 6f;
     public LayerMask AttackMask;
 
     public void Explode()
@@ -22,8 +22,10 @@ public class ExplosiveEnemy : Enemy
         if(colInfo != null)
         {
             colInfo.GetComponent<PlayerHealth>().TakeDamage(AttackDamage);
-            Destroy(gameObject, 0.2f);
         }
+
+        Destroy(gameObject, 0.2f);
+
     }
 
     void OnDrawGizmosSelected()

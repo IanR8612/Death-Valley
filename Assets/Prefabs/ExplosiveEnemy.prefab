@@ -591,7 +591,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 10
+  maxSpeed: 5
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -683,13 +683,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3225183198831510054}
-  Health: 5
-  MaxHealth: 5
+  Health: 10
+  MaxHealth: 10
   isFlipped: 0
   Healthbar: {fileID: 6236135102816623233}
-  AttackDamage: 1
+  AttackDamage: 5
   AttackOffset: {x: 0, y: 0, z: 0}
-  GizmoRange: 3
+  GizmoRange: 5
   AttackMask:
     serializedVersion: 2
     m_Bits: 512
