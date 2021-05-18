@@ -29,8 +29,11 @@ A lot.
 Coding standards for Dominic Castaneda's added functionality for his Unity Programming Final:
 Part of my CSPC245 final was adding extra functionality to a unity game. 
 For that final I added:
+
 -A* pathfinding
+
 -A new enemy 
+
 -A particle system
 
 1.) Identifying Information  
