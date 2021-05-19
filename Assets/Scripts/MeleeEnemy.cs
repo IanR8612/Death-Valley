@@ -11,8 +11,11 @@ public class MeleeEnemy : Enemy
     public float AttackRange = 1f;
     public LayerMask AttackMask;
 
+    public AudioSource meleeSFX;
+
     public void Attack()
     {
+        meleeSFX.Play();
         Vector3 pos = transform.position;
         pos += transform.right * AttackOffset.x;
         pos += transform.up * AttackOffset.y;

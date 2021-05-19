@@ -10,6 +10,7 @@ TagManager:
   - EnemyProjectile
   - Weapon
   - Collectible
+  - Music
   layers:
   - Default
   - TransparentFX

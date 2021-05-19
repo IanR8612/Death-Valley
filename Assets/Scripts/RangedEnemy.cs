@@ -16,6 +16,8 @@ public class RangedEnemy : Enemy
 
     private Transform Player;
 
+    public AudioSource rangedSFX;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -37,6 +39,7 @@ public class RangedEnemy : Enemy
     {
         if (timeBtwShots <= 0)
         {
+            rangedSFX.Play();
             Instantiate(EnemyProjectile, transform.position, Quaternion.identity);
             timeBtwShots = StartTimeBtwShots;
             animator.SetTrigger("Attack");

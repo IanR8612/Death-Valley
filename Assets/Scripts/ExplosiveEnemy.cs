@@ -21,6 +21,8 @@ public class ExplosiveEnemy : Enemy
     public Vector3 AttackOffset; //positioning of the attack gizmo
     public LayerMask AttackMask; //enemies attack on this layer
 
+    public AudioSource explosiveSFX;
+
     void Update()
     {
         //calls Enemy.cs method to flip enemy sprite
@@ -31,6 +33,7 @@ public class ExplosiveEnemy : Enemy
     //is triggered by an event in the ExplosiveEnemy_Attack animation
     public void Explode()
     {
+        explosiveSFX.Play();
         //position of gizmo (attack distance)
         Vector3 pos = transform.position;
         pos += transform.right * AttackOffset.x;

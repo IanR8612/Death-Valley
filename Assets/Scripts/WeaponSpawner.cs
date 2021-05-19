@@ -36,6 +36,8 @@ public class WeaponSpawner : MonoBehaviour
     public Text gunSpawn;
     public Text spawnCheck;
 
+    public AudioSource spawnSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -112,7 +114,8 @@ public class WeaponSpawner : MonoBehaviour
         if (spawn == 1)
         {
             spawn = 0;
-            //Transform _wpType = WeakWeapons[Random.Range(0, WeakWeapons.Length)];        
+            //Transform _wpType = WeakWeapons[Random.Range(0, WeakWeapons.Length)];
+            spawnSFX.Play();
             Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
             //gunSpawn.text = "despawn";
             roundCounter += 1;
@@ -125,6 +128,7 @@ public class WeaponSpawner : MonoBehaviour
         if (spawn == 1)
         {
             spawn = 0;
+            spawnSFX.Play();
             Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
             //gunSpawn.text = "despawn";
             roundCounter += 1;
@@ -136,6 +140,7 @@ public class WeaponSpawner : MonoBehaviour
         if (spawn == 1)
         {
             spawn = 0;
+            spawnSFX.Play();
             Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
             //gunSpawn.text = "despawn";
             roundCounter += 1;

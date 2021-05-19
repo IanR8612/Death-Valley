@@ -7,41 +7,66 @@ public class MenuManager : MonoBehaviour
     public CanvasGroup MainMenu;
     public CanvasGroup Leaderboard;
     public CanvasGroup DeathPanel;
+    public CanvasGroup PauseMenu;
+
+    public AudioSource buttonSFX;
+
+    bool playing;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        playing = false;
         Time.timeScale = 0;
         Show(MainMenu);
         Hide(Leaderboard);
         Hide(DeathPanel);
+        Hide(PauseMenu);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (playing == true && Input.GetKeyDown("escape"))
+        {
+            Time.timeScale = 0;
+            Show(PauseMenu);
+            Hide(Leaderboard);
+            Hide(MainMenu);
+            Hide(DeathPanel);
+        }
+    }
+
+    public void ButtonSound()
+    {
+        buttonSFX.Play();
     }
 
     public void PlayGame()
     {
         Hide(MainMenu);
+        Hide(PauseMenu);
         Time.timeScale = 1;
+        playing = true;
     }
 
     public void ShowLeaderboard()
     {
+        playing = false;
         Show(Leaderboard);
         Hide(MainMenu);
         Hide(DeathPanel);
+        Hide(PauseMenu);
     }
 
     public void ReturnToMain()
     {
+        playing = false;
         Show(MainMenu);
         Hide(Leaderboard);
         Hide(DeathPanel);
+        Hide(PauseMenu);
     }
 
     public void QuitGame()

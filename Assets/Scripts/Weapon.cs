@@ -17,6 +17,9 @@ public class Weapon : MonoBehaviour
     private bool canFire = true;
     private GameObject otherObject;
 
+    public AudioSource projectileSound;
+    public AudioSource pickupSound;
+
 
     public void SetVariables(GameObject playerObject)
     {
@@ -26,7 +29,7 @@ public class Weapon : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey("mouse 0") && canFire && PlayerObject != null)
-            FireProjectile();
+            FireProjectile();            
         if (Input.GetKeyDown("e") && PlayerObject == null && canPickUp)
         {
             SetPlayerObject();
@@ -37,6 +40,7 @@ public class Weapon : MonoBehaviour
     {
         for (int a = 1; a <= ProjectilesPerShot; a += 1)
         {
+            projectileSound.Play();
             float randomRotation = Random.Range(-Spread, Spread);
             float randomSpeedMultiplier = Random.Range(-RandomSpeedMultiplier + 1, RandomSpeedMultiplier + 1);
             GameObject newProjectile = Instantiate(Projectile, ProjectileSpawnLocation.transform.position, this.gameObject.transform.rotation);
@@ -59,6 +63,7 @@ public class Weapon : MonoBehaviour
     {
         if (otherObject.CompareTag("Player"))
         {
+            pickupSound.Play();
             PlayerObject = otherObject;
             this.gameObject.transform.SetParent(PlayerObject.transform);
             PlayerObject.GetComponent<Player>().PickUpNewWeapon(this.gameObject);

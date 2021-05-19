@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth = 10;
     public Player playerToDie;
 
+    public AudioSource loseHealthSFX;
+
     // public Animator anim;
 
     // Start is called before the first frame update
@@ -18,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        loseHealthSFX.Play();
         currentHealth -= amount;
 
         if (currentHealth <= 0)
