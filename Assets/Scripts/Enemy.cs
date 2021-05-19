@@ -27,6 +27,10 @@ public class Enemy : MonoBehaviour
 
     private Transform player;
 
+    public Transform dropPoint;
+    public GameObject HealthPickUp;
+    public bool drop;
+
     void Start()
     {
         //sets health to maxhealth on spawn
@@ -72,6 +76,11 @@ public class Enemy : MonoBehaviour
         this.enabled = false; //disable enemy - doesn't seem to work atm
         //destroy enemy after .6 seconds to show death animation
         Destroy(gameObject, 0.6f);
+
+        // Health pack added by Jae
+        if (drop) Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
+
+
     }
 
     //this method flips the enemy depending on the enemies position relative to the player
