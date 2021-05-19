@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private Vector2 movement;
     private float health = 5;
     private int killCount = 0;
+    public List<string> inventory;
 
     public void TakeDamage(float damage)
     {
@@ -48,6 +49,7 @@ public class Player : MonoBehaviour
     {
         FindCamera();
         InitializeWeapons();
+        inventory = new List<string>();
     }
 
     private void Update()
@@ -117,4 +119,20 @@ public class Player : MonoBehaviour
     {
         return health;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            string itemType = collision.gameObject.GetComponent<HealthPackScript>().itemType;
+            print("We have collected the: " + itemType);
+
+            inventory.Add(itemType);
+            print("Inventory length: " + inventory.Count);
+            Destroy(collision.gameObject);
+        }
+    }
+
+   
+
 }
