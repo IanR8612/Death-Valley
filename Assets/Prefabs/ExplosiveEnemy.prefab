@@ -591,7 +591,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 7
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -603,7 +603,7 @@ MonoBehaviour:
   maxAcceleration: -2.5
   rotationSpeed: 360
   slowdownDistance: 7
-  pickNextWaypointDist: 1.2
+  pickNextWaypointDist: 1.8
   endReachedDistance: 4.5
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
@@ -683,7 +683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3225183198831510054}
-  Health: 10
   MaxHealth: 10
   isFlipped: 0
   Healthbar: {fileID: 6236135102816623233}
