@@ -111,7 +111,7 @@ public class WeaponSpawner : MonoBehaviour
 
         else if (roundCounter >= 20)
         {
-            chosenWeapon = StrongWeapons[Random.Range(0, GODWeapons.Length)];
+            chosenWeapon = GODWeapons[Random.Range(0, GODWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
             {
                 if (spawnCheck.text == "1" && spawn == 1)
