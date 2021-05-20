@@ -718,10 +718,9 @@ MonoBehaviour:
   MaxHealth: 10
   isFlipped: 0
   Healthbar: {fileID: 6236135102816623233}
-  dropPoint: {fileID: 744808281}
-  HealthPickUp: {fileID: 7735870803307227120, guid: e767fceaa3a624c3c96fc339abd4a43a,
+  dropPoint: {fileID: 4614905703362632406}
+  HealthPickUp: {fileID: 7735870803307227120, guid: bb41870873f0c4cb2afc2dfa28b0f235,
     type: 3}
-  drop: 1
   AttackDamage: 5
   GizmoRange: 5
   AttackOffset: {x: 0, y: 0, z: 0}
@@ -729,7 +728,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   explosiveSFX: {fileID: 6950837206710012708}
-  lootDrop: {fileID: 0}
 --- !u!82 &6950837206710012708
 AudioSource:
   m_ObjectHideFlags: 0

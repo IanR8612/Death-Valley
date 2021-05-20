@@ -19,6 +19,7 @@ public class WeaponSpawner : MonoBehaviour
     public Transform[] WeakWeapons;
     public Transform[] MediumWeapons;
     public Transform[] StrongWeapons;
+    public Transform[] GODWeapons;
 
     //public Weapons[] WeakWeapons;
     //public Weapons[] MediumWeapons;
@@ -95,7 +96,7 @@ public class WeaponSpawner : MonoBehaviour
             }
         }
 
-        else if (roundCounter > 10)
+        else if (roundCounter > 10 && roundCounter < 20)
         {
             chosenWeapon = StrongWeapons[Random.Range(0, StrongWeapons.Length)];
             if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
@@ -103,6 +104,19 @@ public class WeaponSpawner : MonoBehaviour
                 if (spawnCheck.text == "1" && spawn == 1)
                 {
                     SpawnStrongWeapon(chosenWeapon);
+                    gunCount = 2;
+                }
+            }
+        }
+
+        else if (roundCounter >= 20)
+        {
+            chosenWeapon = StrongWeapons[Random.Range(0, GODWeapons.Length)];
+            if (GameObject.FindGameObjectsWithTag("Weapon").Length == gunCount)
+            {
+                if (spawnCheck.text == "1" && spawn == 1)
+                {
+                    SpawnGODWeapon(chosenWeapon);
                     gunCount = 2;
                 }
             }
@@ -143,6 +157,18 @@ public class WeaponSpawner : MonoBehaviour
             spawnSFX.Play();
             Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
             //gunSpawn.text = "despawn";
+            roundCounter += 1;
+            spawnCheck.text = "0";
+        }
+    }
+
+    void SpawnGODWeapon(Transform _weapon)
+    {
+        if (spawn == 1)
+        {
+            spawn = 0;
+            spawnSFX.Play();
+            Instantiate(_weapon, spawnPoint.position, spawnPoint.rotation);
             roundCounter += 1;
             spawnCheck.text = "0";
         }
