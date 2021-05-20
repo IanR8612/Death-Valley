@@ -39,6 +39,7 @@ public class WaveSpawner : MonoBehaviour
     public Text playerRespawn;
 
     private List<Transform> enemiesToRemove = new List<Transform>();
+    public ScoreManager highScoreController;
 
     void Start()
     {
@@ -89,7 +90,8 @@ public class WaveSpawner : MonoBehaviour
             {
                 if (state != SpawnState.SPAWNING)
                 {
-                    waveCounter += 1;                    
+                    waveCounter += 1;
+                    highScoreController.AddScore();
                     StartCoroutine(SpawnWave(waves[nextWave]));                    
                     waveCount.text = "Wave: " + waveCounter.ToString();
                 }

@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public CanvasGroup Leaderboard;
     public CanvasGroup DeathPanel;
     public CanvasGroup PauseMenu;
+    public ScoreManager highScoreController;
 
     public AudioSource buttonSFX;
 
@@ -62,6 +63,7 @@ public class MenuManager : MonoBehaviour
 
     public void ReturnToMain()
     {
+        highScoreController.UpdateHighScore();
         playing = false;
         Show(MainMenu);
         Hide(Leaderboard);
@@ -71,6 +73,7 @@ public class MenuManager : MonoBehaviour
 
     public void QuitGame()
     {
+        highScoreController.UpdateHighScore();
         Application.Quit();
     }
 
@@ -86,5 +89,10 @@ public class MenuManager : MonoBehaviour
         canvasGroup.alpha = 0;   // 0 = transparent
         canvasGroup.interactable = false;   // will not allow interaction
         canvasGroup.blocksRaycasts = false;  // will not send ray or vector
+    }
+    public void ResetHighScore()
+    {
+        highScoreController.ClearHighScore();
+        highScoreController.UpdateHighScore();
     }
 }

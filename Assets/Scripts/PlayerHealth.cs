@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 10;
     public float currentHealth = 10;
     public Player playerToDie;
+    public ScoreManager highScoreController;
 
     public AudioSource loseHealthSFX;
 
@@ -25,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            highScoreController.UpdateHighScore();
             playerToDie.Die();
         }
     }
