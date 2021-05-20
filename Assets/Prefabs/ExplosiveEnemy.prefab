@@ -719,7 +719,7 @@ MonoBehaviour:
   isFlipped: 0
   Healthbar: {fileID: 6236135102816623233}
   dropPoint: {fileID: 4614905703362632406}
-  HealthPickUp: {fileID: 7735870803307227120, guid: bb41870873f0c4cb2afc2dfa28b0f235,
+  HealthPickUp: {fileID: 7735870803307227120, guid: e767fceaa3a624c3c96fc339abd4a43a,
     type: 3}
   AttackDamage: 5
   GizmoRange: 5

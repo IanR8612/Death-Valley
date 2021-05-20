@@ -53200,6 +53200,7 @@ MonoBehaviour:
   - {fileID: 3458541369311380300, guid: 1219469279be7ae4881801dec578424a, type: 3}
   GODWeapons:
   - {fileID: 3333255553148552735, guid: 478c86e413317d243aa29299df85fabe, type: 3}
+  - {fileID: 7329751907248253278, guid: 649c063cc2b8d6f4d894e138dff89f34, type: 3}
   roundCounter: 0
   gunSpawn: {fileID: 469922560}
   spawnCheck: {fileID: 681309774}

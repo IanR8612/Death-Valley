@@ -77,8 +77,8 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 0.6f);
 
         // Health pack added by Jae
-        int dropChance = Random.Range(1, 10);
-        if (dropChance == 1)
+        int dropChance = Random.Range(1, 21);
+        if (dropChance == 7)
         {
             Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
         }
