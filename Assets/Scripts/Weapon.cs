@@ -28,6 +28,7 @@ public class Weapon : MonoBehaviour
     public void SetVariables(GameObject playerObject)
     {
         PlayerObject = playerObject;
+        ChangeSprite();
     }
 
     private void Update()
