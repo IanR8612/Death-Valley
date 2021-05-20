@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 4002345092225467936}
   - component: {fileID: 7538888374506834186}
   - component: {fileID: 7538888374506834189}
+  - component: {fileID: 1142339518828960255}
   m_Layer: 0
-  m_Name: HealthPickUp 1
+  m_Name: HealthPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,3 +137,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBonus: 15
+--- !u!114 &1142339518828960255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735870803307227120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bb4f3f62778f24bb41eaf2fd17beeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecondsUntilDeath: 30
