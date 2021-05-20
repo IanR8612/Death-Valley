@@ -84,6 +84,9 @@ Used for the weapons, with modifications made to distinguish the higher-tier wea
 https://opengameart.org/content/explosions-2
 Used, with tinting, for the projectiles
 
+https://www.dafont.com/arcade-classic-2.font
+Font used for the menus
+
 The main-menu background is the desert background from Terraria.
 
 https://soundcloud.com/eric-skiff/come-and-find-me-b-mix
@@ -94,3 +97,5 @@ Website used to randomly-generate all of the gameplay sounds
 
 The script that makes the camera follow the player was taken from a script provided by Prof. Boyd
 for an earlier CPSC 244 project and then modified to account for two dimensions instead of one.
+
+The enemies use A* pathfinding.
