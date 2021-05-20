@@ -29,7 +29,6 @@ public class Enemy : MonoBehaviour
 
     public Transform dropPoint;
     public GameObject HealthPickUp;
-    public bool drop;
 
     void Start()
     {
@@ -78,7 +77,11 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 0.6f);
 
         // Health pack added by Jae
-        if(drop) Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
+        int dropChance = Random.Range(1, 10);
+        if (dropChance == 1)
+        {
+            Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
+        }
         Destroy(gameObject);
     }
 
