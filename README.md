@@ -26,6 +26,7 @@ A lot.
 
 
 
+
 Coding standards for Dominic Castaneda's added functionality for his Unity Programming Final
 
 Part of my CSPC245 final was adding extra functionality to a unity game:
@@ -69,3 +70,27 @@ a. Everything works
   1.) Load the assignment into Unity version 2019.4.9f1  
   2.) Click the play button
 
+
+
+
+External assets, tools, and artwork used for the game:
+
+https://pimen.itch.io/fantasy-skeleton-enemies
+Used as-is for the ranged and melee enemy types, and modified for the bomb enemy type
+
+https://gg-undroid-games.itch.io/pixel-art-guns-with-firing-animations
+Used for the weapons, with modifications made to distinguish the higher-tier weapons
+
+https://opengameart.org/content/explosions-2
+Used, with tinting, for the projectiles
+
+The main-menu background is the desert background from Terraria.
+
+https://soundcloud.com/eric-skiff/come-and-find-me-b-mix
+Song loop used throughout the game
+
+https://sfxr.me/
+Website used to randomly-generate all of the gameplay sounds
+
+The script that makes the camera follow the player was taken from a script provided by Prof. Boyd
+for an earlier CPSC 244 project and then modified to account for two dimensions instead of one.
