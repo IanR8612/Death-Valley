@@ -78,9 +78,8 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 0.6f);
 
         // Health pack added by Jae
-        if (drop) Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
-
-
+        if(drop) Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
+        Destroy(gameObject);
     }
 
     //this method flips the enemy depending on the enemies position relative to the player

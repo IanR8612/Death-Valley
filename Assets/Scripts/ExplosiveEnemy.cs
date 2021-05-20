@@ -23,6 +23,8 @@ public class ExplosiveEnemy : Enemy
 
     public AudioSource explosiveSFX;
 
+    //public GameObject lootDrop;
+
     void Update()
     {
         //calls Enemy.cs method to flip enemy sprite
@@ -46,8 +48,11 @@ public class ExplosiveEnemy : Enemy
         if(colInfo != null)
         {
             colInfo.GetComponent<PlayerHealth>().TakeDamage(AttackDamage);
-            animator.SetTrigger("Explode");
+            // animator.SetTrigger("Explode");
+            //Instantiate(lootDrop, transform.position, Quaternion.identity);
+            //if (drop) Instantiate(HealthPickUp, dropPoint.position, dropPoint.rotation);
         }
+
 
         //explosive enemy should die after explosion
         Destroy(gameObject, 0.2f);
