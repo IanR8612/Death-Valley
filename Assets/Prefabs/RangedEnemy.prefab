@@ -343,7 +343,7 @@ MonoBehaviour:
   isFlipped: 0
   Healthbar: {fileID: 4138537946485607332}
   dropPoint: {fileID: 3227421730158635929}
-  HealthPickUp: {fileID: 7735870803307227120, guid: e767fceaa3a624c3c96fc339abd4a43a,
+  HealthPickUp: {fileID: 7735870803307227120, guid: bb41870873f0c4cb2afc2dfa28b0f235,
     type: 3}
   StartTimeBtwShots: 1
   EnemyProjectile: {fileID: 8062602826814360393, guid: 251f02b00c47f4edc8aea7a4c1410d4e,
