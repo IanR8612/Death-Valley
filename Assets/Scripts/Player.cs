@@ -74,6 +74,10 @@ public class Player : MonoBehaviour
             {
                 spriteRenderer.flipX = true;
             }
+            else if (movement.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
         else
         {
