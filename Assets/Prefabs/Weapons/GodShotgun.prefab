@@ -58,6 +58,10 @@ MonoBehaviour:
   Spread: 12
   ProjectilesPerShot: 20
   Damage: 1
+  noHandSprite: {fileID: 21300000, guid: 873e3ee55f0398c4a88347f57c65210c, type: 3}
+  handSprite: {fileID: 21300000, guid: eb587955af0ec4545bc52dbd7c010c49, type: 3}
+  currentSprite: {fileID: 6275109822697610517}
+  doesSpriteNeedtoSwitch: 1
   projectileSound: {fileID: 772283768175725214}
   pickupSound: {fileID: 1797060885901249902}
 --- !u!61 &2103838139664564932

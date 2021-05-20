@@ -58,6 +58,10 @@ MonoBehaviour:
   Spread: 0
   ProjectilesPerShot: 1
   Damage: 3
+  noHandSprite: {fileID: 21300000, guid: 0df09296e0aca6b47827c277d71e8874, type: 3}
+  handSprite: {fileID: 21300000, guid: 00716034f6428254298ba452feff420d, type: 3}
+  currentSprite: {fileID: 2084942217582359124}
+  doesSpriteNeedtoSwitch: 1
   projectileSound: {fileID: 2765801750123168450}
   pickupSound: {fileID: 1942750721793624808}
 --- !u!61 &6253473902184541573
@@ -352,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7329751907520743311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.274, y: 0, z: 0}
+  m_LocalPosition: {x: 0.293, y: 0.009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7329751907248253278}

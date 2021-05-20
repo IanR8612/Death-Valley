@@ -13,6 +13,10 @@ public class Weapon : MonoBehaviour
     public float Spread = 0.001f;
     public int ProjectilesPerShot = 1;
     public float Damage = 1;
+    public Sprite noHandSprite;
+    public Sprite handSprite;
+    public SpriteRenderer currentSprite;
+    public bool doesSpriteNeedtoSwitch = true;
     private bool canPickUp = false;
     private bool canFire = true;
     private GameObject otherObject;
@@ -67,7 +71,14 @@ public class Weapon : MonoBehaviour
             PlayerObject = otherObject;
             this.gameObject.transform.SetParent(PlayerObject.transform);
             PlayerObject.GetComponent<Player>().PickUpNewWeapon(this.gameObject);
+            ChangeSprite();
         }
+    }
+
+    private void ChangeSprite()
+    {
+        if (doesSpriteNeedtoSwitch)
+            currentSprite.sprite = handSprite;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

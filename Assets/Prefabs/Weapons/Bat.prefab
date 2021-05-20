@@ -58,6 +58,10 @@ MonoBehaviour:
   Spread: 0
   ProjectilesPerShot: 1
   Damage: 5
+  noHandSprite: {fileID: 0}
+  handSprite: {fileID: 0}
+  currentSprite: {fileID: 0}
+  doesSpriteNeedtoSwitch: 0
   projectileSound: {fileID: 906192521531892411}
   pickupSound: {fileID: 1640818866377685776}
 --- !u!61 &3855328767081804155
